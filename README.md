@@ -1,2 +1,2 @@
 # My-first-project-OOP
-Project
+Project C++ Programming
