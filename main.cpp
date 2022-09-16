@@ -27,7 +27,9 @@ int main() {
     sum+=temp.paz[i];
     }*/
 
-  
+  cout<<std::endl<<std::endl;
+  cout << "Suvedus reikiamus pazymius - iveskite endl"<<endl;
+  cout<<std::endl<<std::endl;
   cout<<"Iveskite "<< n+1<<" -aji paz. ";
     while ( cin>>temp.paz[n])
    {
@@ -38,7 +40,6 @@ int main() {
       n +=1;}
      else
        cout<< " Pazymys ivestas    "<<endl;
-       break;
   }
 
 
