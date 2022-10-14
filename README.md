@@ -13,10 +13,12 @@ Project C++ Programming
     - [x] studentų rūšiavimą į dvi grupes/kategorijas;
     - [x] surūšiuotų studentų išvedimą į du naujus failus.
 
-Left aligned Header | Right aligned Header | Center aligned Header
-| :--- | ---: | :---:  | :---:
-Content Cell  | Content Cell | Content Cell | Content Cell
-Content Cell  | Content Cell | Content Cell | Content Cell
+|int|float|str |bool |  mix   |          time          |
+|--:|----:|----|-----|-------:|------------------------|
+|  0| 0.10|hoge|True |       0|2017-01-01 03:04:05+0900|
+|  2|-2.23|foo |False|        |2017-12-23 12:34:51+0900|
+|  3| 0.00|bar |True |Infinity|2017-03-03 22:44:55+0900|
+|-10|-9.90|    |False|     NaN|2017-01-01 00:00:00+0900|
 ![285697313_627629259060279_957838069182607771_n](https://user-images.githubusercontent.com/72965991/195760793-ea7b354f-496f-4786-8d20-58b0f01ff2e5.png)
 
 
