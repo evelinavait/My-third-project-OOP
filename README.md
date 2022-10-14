@@ -19,8 +19,6 @@ Project C++ Programming
 
 ## Testų metu naudoto kompiuterio parametrai: ##
 
-11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz CPU
-16GB RAM
-Kingston 512GB SSD Solid State Drive NVMe PCle 3.0 x4
-
-
+* Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz 2.50 GHz
+* 4GB RAM
+* Windows 7 Ultimate; 64 bitų operacinė sistema
