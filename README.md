@@ -14,7 +14,7 @@ Project C++ Programming
     - [x] surūšiuotų studentų išvedimą į du naujus failus.
 
 |Įrašai|Kūrimas|Rūšiavimas |Išvedimas į nelaimingi.txt |  Išvedimas į protingi.txct   |          time          |
-|---|----:|----|-----|-------:|------------------------|
+|---|----:|----|---|---|---|
 |1000 įrašų| 0.10|hoge|True |       0|2017-01-01 03:04:05+0900|
 |10000 įrašų|-2.23|foo |False|        |2017-12-23 12:34:51+0900|
 |100000 įrašų| 0.00|bar |True |Infinity|2017-03-03 22:44:55+0900|
