@@ -13,6 +13,6 @@ Project C++ Programming
     - [x] surūšiuotų studentų išvedimą į du naujus failus.
 
 <p align="center">
-  <![285697313_627629259060279_957838069182607771_n](https://user-images.githubusercontent.com/72965991/195760793-ea7b354f-496f-4786-8d20-58b0f01ff2e5.png)>
+![285697313_627629259060279_957838069182607771_n](https://user-images.githubusercontent.com/72965991/195760793-ea7b354f-496f-4786-8d20-58b0f01ff2e5.png)
 </p>
 
