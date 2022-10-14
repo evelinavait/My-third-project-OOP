@@ -6,7 +6,7 @@ Project C++ Programming
 * Studentai surūšiuojami didėjimo tvarka ir padalinami į dvi kategorijas:
   * Studentai, kurių galutinis balas < 5.0 - nelaimingi
   * Studentai, kurių galutinis balas >= 5.0 - protingi
-* Surūšiuoti studentai išvedami į du naujus failus `-nelaimingi-studentai.txt` ir `-protingi-studentai.txt`. Failai pateikiami [files(http://www.google.fr/ "Named link title") aplankale.
+* Surūšiuoti studentai išvedami į du naujus failus `-nelaimingi-studentai.txt` ir `-protingi-studentai.txt`. Failai pateikiami [a link](https://github.com/user/repo/blob/branch/other_file.md)
 * Atliekama programos veikimo greičio (spartos) analizė: t.y. išmatuojama programos sparta išskiriant kiek laiko užtruko kiekvienas iš žemiau išvardintų žingsnių:
     - [x] failų kūrimą;
     - [ ] duomenų nuskaitymą iš failų;
