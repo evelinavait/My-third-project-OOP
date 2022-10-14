@@ -5,3 +5,9 @@ Project C++ Programming
 - [x] Studentai surūšiuojami (padalinami) į dvi kategorijas:
   * Studentai, kurių galutinis balas < 5.0 - nelaimingi
   * Studentai, kurių galutinis balas >= 5.0 - protingi
+- [x] Surūšiuoti studentai išvedami į du naujus failus `1000-studentai.txt`
+- [x] Atliekama programos veikimo greičio (spartos) analizė: t.y. išmatuojama programos sparta išskiriant kiek laiko užtruko kiekvienas iš žemiau išvardintų žingsnių:
+ - [x] failų kūrimą;
+ - [ ] duomenų nuskaitymą iš failų;
+ - [x] studentų rūšiavimą į dvi grupes/kategorijas;
+ - [x] surūšiuotų studentų išvedimą į du naujus failus.
