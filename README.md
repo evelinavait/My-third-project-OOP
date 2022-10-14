@@ -15,7 +15,7 @@ Project C++ Programming
     - [x] surūšiuotų studentų išvedimą į du naujus failus.
 
 |Įrašai|Failų kūrimas|Rūšiavimas didėjimo tvarka |Dalijimas į dvi grupes|Išvedimas į nelaimingi.txt |  Išvedimas į protingi.txt
-|---|----:|----|---|---
+|---|----:|----|---|---|---
 |1000 įrašų| 0.10|0.005|0 |       0|2017-01-01 03:04:05+0900|
 |10000 įrašų|-2.23|0.062 |0.004|        |2017-12-23 12:34:51+0900|
 |100000 įrašų| 0.00|0.884 |0.056 |Infinity|2017-03-03 22:44:55+0900|
