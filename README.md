@@ -1,8 +1,6 @@
 # My-first-project-OOP
 Project C++ Programming
 
-[![Pdjdjd](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=shields)]
-
 * Sugeneruojami penki atsitiktiniai studentų sąrašų failai, sudaryti iš: 1 000, 10 000, 100 000, 1 000 000, 10 000 000 įrašų. Vardai ir Pavardės generuojami "šabloniniai", kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t.
 * Studentai surūšiuojami (padalinami) į dvi kategorijas:
   * Studentai, kurių galutinis balas < 5.0 - nelaimingi
