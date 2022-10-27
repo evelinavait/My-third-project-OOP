@@ -65,7 +65,8 @@ Vardas2     Pavardė2    7    10    8    5    4    6
     * [std::list](http://en.cppreference.com/w/cpp/container/list)
 
 :heavy_exclamation_mark:  Tiek failų kūrimas, tiek ir surūšiuotų rezultatų išvedimas į failus nepriklauso nuo naudojamo konteinerio, todėl `v0.4` versijoje matuojami šie programoje atliekami žingsniai:
+
     * duomenų nuskaitymas iš failų;
-    *studentų rūšiavimas į dvi grupes/kategorijas;
+    * studentų rūšiavimas į dvi grupes/kategorijas;
     
 Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 100 000, 1 000 000 įrašų.
