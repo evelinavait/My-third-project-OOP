@@ -11,17 +11,17 @@ main.cpp ir my_lib.hpp
 # [v0.2.1 versija](https://github.com/evelinavait/My-first-project-OOP/tree/v0.2.1)
 
 main2.cpp ir my_lib2.hpp
-* `v0.2` versijoje yra sukuriamas ir užpildomas failas "kursiokai.txt". 
-* Nuskaitomi duomenys iš failo ir išvedami rezultatai.
-* Minimaliai panaudotas išimčių valdymas
+- `v0.2` versijoje yra sukuriamas ir užpildomas failas "kursiokai.txt". 
+- Nuskaitomi duomenys iš failo ir išvedami rezultatai.
+- Minimaliai panaudotas išimčių valdymas
 
 # [v0.3 versija](https://github.com/evelinavait/My-first-project-OOP/tree/v0.3)
-* Sugeneruojami atsitiktiniai studentų sąrašų failai, sudaryti iš: 1 000, 10 000, 100 000, 1 000 000 įrašų. Vardai ir Pavardės generuojami "šabloniniai", kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t.
+- Sugeneruojami atsitiktiniai studentų sąrašų failai, sudaryti iš: 1 000, 10 000, 100 000, 1 000 000 įrašų. Vardai ir Pavardės generuojami "šabloniniai", kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t.
 * Studentai surūšiuojami didėjimo tvarka ir padalinami į dvi kategorijas:
   * Studentai, kurių galutinis balas < 5.0 - nelaimingi
   * Studentai, kurių galutinis balas >= 5.0 - protingi
-* Surūšiuoti studentai išvedami į du naujus failus `-nelaimingi-studentai.txt` ir `-protingi-studentai.txt`. Failai pateikiami [files](https://github.com/evelinavait/My-first-project-OOP/tree/V0.3/files) aplankale.
-* Atliekama programos veikimo greičio (spartos) analizė: t.y. išmatuojama programos sparta išskiriant kiek laiko užtruko kiekvienas iš žemiau išvardintų žingsnių:
+- Surūšiuoti studentai išvedami į du naujus failus `-nelaimingi-studentai.txt` ir `-protingi-studentai.txt`. Failai pateikiami [files](https://github.com/evelinavait/My-first-project-OOP/tree/V0.3/files) aplankale.
+- Atliekama programos veikimo greičio (spartos) analizė: t.y. išmatuojama programos sparta išskiriant kiek laiko užtruko kiekvienas iš žemiau išvardintų žingsnių:
     - [x] failų kūrimą;
     - [ ] duomenų nuskaitymą iš failų;
     - [x] rūšiavimą didėjimo tvarka, naudojant `sort` funkciją
@@ -37,18 +37,18 @@ main2.cpp ir my_lib2.hpp
 
 # v0.3.1 versija #
 Patobulinta `v0.3` versijos realizacija
-* Funkcijos, nauji duomenų tipai (struct’ūros) perkeliami į antraštinius (angl. **header (*.h)**) failus.
-* Sugeneruojami atsitiktiniai studentų sąrašų failai, sudaryti iš: 1 000, 10 000, 100 000, 1 000 000 įrašų, kurių (preliminari) struktūra atitinka failų `Studentai*.txt failas testavimui` struktūrą. Vardai ir Pavardės generuojami "šabloniniai", kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t.
+- Funkcijos, nauji duomenų tipai (struct’ūros) perkeliami į antraštinius (angl. **header (*.h)**) failus.
+- Sugeneruojami atsitiktiniai studentų sąrašų failai, sudaryti iš: 1 000, 10 000, 100 000, 1 000 000 įrašų, kurių (preliminari) struktūra atitinka failų `Studentai*.txt failas testavimui` struktūrą. Vardai ir Pavardės generuojami "šabloniniai", kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t.
 ```
 Vardas      Pavarde     ND1  ND2   ND3  ND4  ND5  Egzaminas
 Vardas1     Pavardė1    8    9     10   6    10   9
 Vardas2     Pavardė2    7    10    8    5    4    6
 ...
 ```
-* Atliekama programos veikimo greičio (spartos) analizė: t.y. išmatuojama programos sparta išskiriant kiek laiko užtruko:
-- [x] duomenų nuskaitymas iš failų;
-* Programa papildoma taip, kad ji veiktų, kai įrašų skaičius (n) yra nežinomas iš anksto, t.y. vartotojas įvedant į konsolę nusprendžia, kokį failą generuoti.
-* Minimaliai panaudojamas išimčių valdymas (v0.2.1 versijoje buvo panaudota `readFile.exceptions (std::ifstream::failbit | std::ifstream::badbit);`)
+- Atliekama programos veikimo greičio (spartos) analizė: t.y. išmatuojama programos sparta išskiriant kiek laiko užtruko:
+    - [x] duomenų nuskaitymą iš failų;
+- Programa papildoma taip, kad ji veiktų, kai įrašų skaičius (n) yra nežinomas iš anksto, t.y. vartotojas įvedant į konsolę nusprendžia, kokį failą generuoti.
+- Minimaliai panaudojamas išimčių valdymas (v0.2.1 versijoje buvo panaudota `readFile.exceptions (std::ifstream::failbit | std::ifstream::badbit);`)
  ```c++
  try {
         cout << "Iveskite studentu kieki: ";
@@ -60,8 +60,17 @@ Vardas2     Pavardė2    7    10    8    5    4    6
 }
 ```
 # v0.4 versija
-* Atliekamas **konteinerių testavimas**: išmatuojama patobulintos v0.3.1 realizacijos veikimo sparta priklausomai nuo naudojamo vieno iš dviejų konteinerių:
+- Atliekamas **konteinerių testavimas**: išmatuojama patobulintos v0.3.1 realizacijos veikimo sparta priklausomai nuo naudojamo vieno iš dviejų konteinerių:
     - [std::vector](http://en.cppreference.com/w/cpp/container/vector)
     - [std::list](http://en.cppreference.com/w/cpp/container/list)
+
+ matuojami šie programoje atliekami žingsniai:
+   - duomenų nuskaitymas iš failų;
+   - studentų rūšiavimas į dvi grupes/kategorijas;
+
+
+Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 100 000, 1 000 000 įrašų.
+
+
 
 
