@@ -34,3 +34,29 @@ main2.cpp ir my_lib2.hpp
 |10000 įrašų|0.173|0.062 |0.004|0.015|0.02|
 |100000 įrašų|2.052|0.884 |0.056 |0.233|0.196|
 |1000000 įrašų|22.406|10.739|0.614|1.417|2.605|
+
+# v0.3.1 versija #
+Papildyta v0.3 versija
+* Funkcijos, nauji duomenų tipai (struct’ūros) perkeliami į antraštinius (angl. header (*.h)) failus.
+* Sugeneruojami atsitiktiniai studentų sąrašų failai, sudaryti iš: 1 000, 10 000, 100 000, 1 000 000 įrašų, kurių (preliminari) struktūra atitinka failų `Studentai-.txt failas testavimui` struktūrą. Vardai ir Pavardės generuojami "šabloniniai", kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t.
+```
+Vardas      Pavarde     ND1  ND2   ND3  ND4  ND5  Egzaminas
+Vardas1     Pavardė1    8    9     10   6    10   9
+Vardas2     Pavardė2    7    10    8    5    4    6
+...
+```
+* Atliekama programos veikimo greičio (spartos) analizė: t.y. išmatuojama programos sparta išskiriant kiek laiko užtruko:
+- [x] duomenų nuskaitymas iš failų;
+* Programa papildoma taip, kad ji veiktų, kai įrašų skaičius (n) yra nežinomas iš anksto, t.y. vartotojas įvedant į konsolę nusprendžia, kokį failą generuoti.
+* Minimaliai panaudojamas išimčių valdymas (v0.2.1 versijoje buvo panaudota `readFile.exceptions (std::ifstream::failbit | std::ifstream::badbit);`)
+ ```c++
+ try {
+        cout << "Iveskite studentu kieki: ";
+        cin >> c;
+        GetStudents(c);
+     } catch(const ios_base::failure& e) {
+        cout << "Netinkamai ivestas studentu kiekis" << endl;
+        cout << e.what() << endl;
+}
+```
+# v0.4 versija #
