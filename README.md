@@ -15,7 +15,7 @@ main2.cpp ir my_lib2.hpp
 * Nuskaitomi duomenys iš failo ir išvedami rezultatai.
 * Minimaliai panaudotas išimčių valdymas
 
-# v0.3 versija #
+# [v0.3 versija](https://github.com/evelinavait/My-first-project-OOP/tree/v0.3)
 * Sugeneruojami atsitiktiniai studentų sąrašų failai, sudaryti iš: 1 000, 10 000, 100 000, 1 000 000 įrašų. Vardai ir Pavardės generuojami "šabloniniai", kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t.
 * Studentai surūšiuojami didėjimo tvarka ir padalinami į dvi kategorijas:
   * Studentai, kurių galutinis balas < 5.0 - nelaimingi
