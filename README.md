@@ -6,12 +6,12 @@ Papildyta programa taip, kad ji veiktų ir tokiu atveju, kai namų darbų skaič
 
 # [v0.2 versija](https://github.com/evelinavait/My-first-project-OOP/tree/v0.2)
 main.cpp ir my_lib.hpp
-v0.1 versija naudojant tradicinį dinaminį C masyvą.
+`v0.1` versija naudojant tradicinį dinaminį C masyvą.
 
 # [v0.2.1 versija](https://github.com/evelinavait/My-first-project-OOP/tree/v0.2.1)
 
 main2.cpp ir my_lib2.hpp
-* v0.2 versijoje yra sukuriamas ir užpildomas failas "kursiokai.txt". 
+* `v0.2` versijoje yra sukuriamas ir užpildomas failas "kursiokai.txt". 
 * Nuskaitomi duomenys iš failo ir išvedami rezultatai.
 * Minimaliai panaudotas išimčių valdymas
 
@@ -36,7 +36,7 @@ main2.cpp ir my_lib2.hpp
 |1000000 įrašų|22.406|10.739|0.614|1.417|2.605|
 
 # v0.3.1 versija #
-Papildyta v0.3 versija
+Patobulinta `v0.3` versijos realizacija
 * Funkcijos, nauji duomenų tipai (struct’ūros) perkeliami į antraštinius (angl. **header (*.h)**) failus.
 * Sugeneruojami atsitiktiniai studentų sąrašų failai, sudaryti iš: 1 000, 10 000, 100 000, 1 000 000 įrašų, kurių (preliminari) struktūra atitinka failų `Studentai*.txt failas testavimui` struktūrą. Vardai ir Pavardės generuojami "šabloniniai", kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t.
 ```
@@ -60,4 +60,7 @@ Vardas2     Pavardė2    7    10    8    5    4    6
 }
 ```
 # v0.4 versija
+* Atliekamas **konteinerių testavimas**: išmatuojama patobulintos v0.3.1 realizacijos veikimo sparta priklausomai nuo naudojamo vieno iš dviejų konteinerių:
+ * std::vector
+ * std::list  
 
