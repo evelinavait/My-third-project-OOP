@@ -49,7 +49,7 @@ bool SmartAndStupid(vector<student> students)
     clock_t begin = clock();
     sort(students.begin(), students.end(), compareInterval);
     clock_t end = clock();
-    cout << students.size() << " Irasu rusiavimo didejimo tvarka laikas, su sort funkcija: ";
+    cout << students.size() << " Irasu rusiavimo didejimo tvarka laikas, su sort funkcija (Vector): ";
     CalculateTimeAndPrint(begin, end);
 
     begin = clock();
@@ -66,19 +66,19 @@ bool SmartAndStupid(vector<student> students)
     }
     end = clock();
 
-    cout << students.size() << " Irasu dalijimo i dvi grupes laikas: ";
+    cout << students.size() << " Irasu dalijimo i dvi grupes laikas (Vector): ";
     CalculateTimeAndPrint(begin, end);
 
     begin = clock();
     PrintStudents(stupid, ToString(students.size()) + "nelaimingi");
     end = clock();
-    cout << students.size() << " Irasu nelaimingi irasymo i faila laikas: ";
+    cout << students.size() << " Irasu nelaimingi irasymo i faila laikas (Vector): ";
     CalculateTimeAndPrint(begin, end);
 
     begin = clock();
     PrintStudents(smart, ToString(students.size()) + "protingi");
     end = clock();
-    cout << students.size() << " Irasu protingi irasymo i faila laikas: ";
+    cout << students.size() << " Irasu protingi irasymo i faila laikas (Vector): ";
     CalculateTimeAndPrint(begin, end);
 }
 
@@ -145,10 +145,54 @@ vector<student> ReadFromFile (string fileName){
 //        std::cout <<elem.firstName<<" "<<elem.lastName<<" "<<elem.final<<" "<<std::endl;
 //    }
     clock_t end = clock();
-    cout << "Failo is " << myVec.size() << " irasu nuskaitymo laikas: ";
+    cout << "Failo is " << myVec.size() << " irasu nuskaitymo laikas (Vector): ";
     CalculateTimeAndPrint(begin, end);
 
     return myVec;
+}
+
+list<student> ReadFromFileList (string fileName){
+    clock_t begin = clock();
+
+   std::ifstream inputFile(fileName);
+   std::string line;
+   std::list<student> myList;//create a vector of Student objects
+   if(inputFile)
+   {
+       int k;
+       k = 0;
+       while(std::getline(inputFile, line))
+       {
+           k++;
+           if (k < 2)
+                continue;
+           student studentObject;
+           std::istringstream st(line);
+
+           st >> studentObject.firstName; //read the firstname
+           st >> studentObject.lastName; //read the lastname
+           for (int i = 0; i< 5; i++){
+                string nd;
+                st >> nd;
+                //cout << nd << endl;
+                studentObject.grade.push_back(stoi(nd));
+
+           }
+           st >> studentObject.final;
+
+           if(st)//check if input succeded
+           {
+               myList.push_back(studentObject);//add the studentObject into the vector
+           }
+
+       }
+
+   }
+            clock_t end = clock();
+           cout << "Failo is " << myList.size() << " irasu nuskaitymo laikas (List): ";
+           CalculateTimeAndPrint(begin, end);
+
+           return myList;
 }
 
 vector<student> GetStudents(int cStudents){
@@ -172,10 +216,12 @@ vector<student> GetStudents(int cStudents){
 
     string fileNameToFunction = "files/" + ToString(cStudents) + "-studentai.txt";
     vector<student> readFromFile = ReadFromFile(fileNameToFunction);
+    list<student> readFromFileList = ReadFromFileList(fileNameToFunction);
+
 
     SmartAndStupid(students);
     clock_t end = clock();
-    cout << endl << students.size() << " Irasu testavimo laikas: ";
+    cout << endl << students.size() << " Irasu testavimo laikas (Vector): ";
     CalculateTimeAndPrint(begin, end);
 
     cout << endl;
