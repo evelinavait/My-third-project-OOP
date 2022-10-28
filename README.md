@@ -85,7 +85,7 @@ Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 10
 ![v04_100000](https://user-images.githubusercontent.com/72965991/198582187-753401a8-f541-43fe-b764-6a05ab3ead41.png)
 ![v04_1000000](https://user-images.githubusercontent.com/72965991/198583985-3f1a70d8-2480-4171-8e87-823c5563f558.png)
 
-Testavimo sistemos parametrai (CPU, RAM, HDD (magnetinis, SSD)) pateikiami aplankale [CPU](). Apačioje pateiktas CPU naudojimas ir retrospektyva, atliekant programos veikimo greičio (spartos) analizę su failu, sudarytu iš 1 000 000 įrašų.
+Testavimo sistemos parametrai (CPU, RAM, HDD (magnetinis, SSD)) pateikiami aplankale [CPU](https://github.com/evelinavait/My-first-project-OOP/tree/V0.4/CPU). Apačioje pateiktas CPU naudojimas ir retrospektyva, atliekant programos veikimo greičio (spartos) analizę su failu, sudarytu iš 1 000 000 įrašų.
 
 ![CPU_1000000](https://user-images.githubusercontent.com/72965991/198593227-25df8dd9-f475-451c-970b-8e126354bbad.png)
 
