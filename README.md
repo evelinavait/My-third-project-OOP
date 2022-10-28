@@ -80,6 +80,10 @@ Vardas2     Pavardė2    7    10    8    5    4    6
     
 Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 100 000, 1 000 000 įrašų.
 
+![v04_1000](https://user-images.githubusercontent.com/72965991/198581604-72588075-6dd8-4558-8203-e5212891c7f8.png)
+![v04_10000](https://user-images.githubusercontent.com/72965991/198581810-02cf4b0f-bcc1-42b6-82df-c77f9bf4bef6.png)
+
+
 ## Testų metu naudoto kompiuterio parametrai: ##
 
 * Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz 2.50 GHz
