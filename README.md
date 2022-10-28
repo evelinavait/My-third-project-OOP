@@ -84,7 +84,9 @@ Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 10
 ![v04_10000](https://user-images.githubusercontent.com/72965991/198581810-02cf4b0f-bcc1-42b6-82df-c77f9bf4bef6.png)
 ![v04_100000](https://user-images.githubusercontent.com/72965991/198582187-753401a8-f541-43fe-b764-6a05ab3ead41.png)
 ![v04_1000000](https://user-images.githubusercontent.com/72965991/198583985-3f1a70d8-2480-4171-8e87-823c5563f558.png)
+
 testavimo sistemos parametrus (CPU, RAM, HDD (magnetinis, SSD)),
+
 ![CPU_1000000](https://user-images.githubusercontent.com/72965991/198593227-25df8dd9-f475-451c-970b-8e126354bbad.png)
 
 ## Testų metu naudoto kompiuterio parametrai: ##
