@@ -68,6 +68,18 @@ Vardas2     Pavardė2    7    10    8    5    4    6
 ![100000](https://user-images.githubusercontent.com/72965991/198505415-0ba8136d-8aff-4dc3-850a-8218f158ab27.png)
 ![1000000](https://user-images.githubusercontent.com/72965991/198505439-cf7a7b0b-dc99-423d-90f1-f441353d54c0.png)
 
+# v0.4 versija
+* Atliekamas **konteinerių testavimas**: išmatuojama patobulintos v0.3.1 realizacijos veikimo sparta priklausomai nuo naudojamo vieno iš dviejų konteinerių:
+    * [std::vector](http://en.cppreference.com/w/cpp/container/vector)
+    * [std::list](http://en.cppreference.com/w/cpp/container/list)
+
+:heavy_exclamation_mark:  Tiek failų kūrimas, tiek ir surūšiuotų rezultatų išvedimas į failus nepriklauso nuo naudojamo konteinerio, todėl `v0.4` versijoje matuojami šie programoje atliekami žingsniai:
+
+* duomenų nuskaitymas iš failų;
+* studentų rūšiavimas į dvi grupes/kategorijas;
+    
+Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 100 000, 1 000 000 įrašų.
+
 ## Testų metu naudoto kompiuterio parametrai: ##
 
 * Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz 2.50 GHz
