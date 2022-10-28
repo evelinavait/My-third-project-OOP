@@ -35,7 +35,7 @@ main2.cpp ir my_lib2.hpp
 |100000 įrašų|2.052|0.884 |0.056 |0.233|0.196|
 |1000000 įrašų|22.406|10.739|0.614|1.417|2.605|
 
-# v0.3.1 versija #
+# [v0.3.1 versija](https://github.com/evelinavait/My-first-project-OOP/releases/tag/v0.3.1)
 Patobulinta `v0.3` versijos realizacija
 * Funkcijos, nauji duomenų tipai (struct’ūros) perkeliami į antraštinius (angl. **header (*.h)**) failus.
 * Sugeneruojami atsitiktiniai studentų sąrašų failai, sudaryti iš: 1 000, 10 000, 100 000, 1 000 000 įrašų, kurių (preliminari) struktūra atitinka failų `Studentai*.txt failas testavimui` struktūrą. Vardai ir Pavardės generuojami "šabloniniai", kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t.
