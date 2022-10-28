@@ -21,7 +21,7 @@ Project C++ Programming
 |100000 įrašų|2.052|0.884 |0.056 |0.233|0.196|
 |1000000 įrašų|22.406|10.739|0.614|1.417|2.605|
 
-![285697313_627629259060279_957838069182607771_n](https://user-images.githubusercontent.com/72965991/195760793-ea7b354f-496f-4786-8d20-58b0f01ff2e5.png)
+# v0.3.1 versija #
 
 Patobulinta `v0.3` versijos realizacija
 * Funkcijos, nauji duomenų tipai (struct’ūros) perkeliami į antraštinius (angl. **header (*.h)**) failus.
@@ -48,7 +48,8 @@ Vardas2     Pavardė2    7    10    8    5    4    6
 ```
 ![1000](https://user-images.githubusercontent.com/72965991/198505285-532c0c77-7b4e-40d6-a6ae-e2dcad921821.png)
 ![10000](https://user-images.githubusercontent.com/72965991/198505302-b6be7151-c937-4c1b-b858-ff7b10c36a3c.png)
-
+![100000](https://user-images.githubusercontent.com/72965991/198505415-0ba8136d-8aff-4dc3-850a-8218f158ab27.png)
+![1000000](https://user-images.githubusercontent.com/72965991/198505439-cf7a7b0b-dc99-423d-90f1-f441353d54c0.png)
 
 ## Testų metu naudoto kompiuterio parametrai: ##
 
