@@ -82,7 +82,8 @@ Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 10
 
 ![v04_1000](https://user-images.githubusercontent.com/72965991/198581604-72588075-6dd8-4558-8203-e5212891c7f8.png)
 ![v04_10000](https://user-images.githubusercontent.com/72965991/198581810-02cf4b0f-bcc1-42b6-82df-c77f9bf4bef6.png)
-
+![v04_100000](https://user-images.githubusercontent.com/72965991/198582187-753401a8-f541-43fe-b764-6a05ab3ead41.png)
+![v04_1000000](https://user-images.githubusercontent.com/72965991/198583296-b23132c4-2f35-42a5-b611-1a7292ccad8d.png)
 
 ## Testų metu naudoto kompiuterio parametrai: ##
 
