@@ -30,6 +30,7 @@ void PrintStudents(vector<student> students, string fileName);
 bool SmartAndStupid(vector<student> students);
 student CreateStudent(int cGrades, int studentId);
 vector<student> ReadFromFile (string fileName);
+list<student> ReadFromFileList (string fileName);
 vector<student> GetStudents(int cStudents);
 
 #endif // STUDENT_H_INCLUDED
