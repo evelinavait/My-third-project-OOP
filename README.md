@@ -21,6 +21,9 @@ Project C++ Programming
 |100000 įrašų|2.052|0.884 |0.056 |0.233|0.196|
 |1000000 įrašų|22.406|10.739|0.614|1.417|2.605|
 
+![image](https://user-images.githubusercontent.com/72965991/198505710-49f994ae-f9a3-490a-8e56-bb956909c13b.png)
+
+
 # v0.3.1 versija #
 
 Patobulinta `v0.3` versijos realizacija
