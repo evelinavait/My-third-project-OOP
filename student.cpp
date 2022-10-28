@@ -137,7 +137,7 @@ vector<student> ReadFromFile (string fileName){
     }
     else
     {
-        cout<<"Failas negali buti atidarytas"<<endl;
+        cout << "Failas negali buti atidarytas" << endl;
     }
 
 //    for(const student &elem: myVec)
@@ -153,46 +153,46 @@ vector<student> ReadFromFile (string fileName){
 
 list<student> ReadFromFileList (string fileName){
     clock_t begin = clock();
-
-   std::ifstream inputFile(fileName);
-   std::string line;
-   std::list<student> myList;//create a vector of Student objects
-   if(inputFile)
-   {
-       int k;
-       k = 0;
-       while(std::getline(inputFile, line))
-       {
-           k++;
-           if (k < 2)
-                continue;
-           student studentObject;
-           std::istringstream st(line);
-
-           st >> studentObject.firstName; //read the firstname
-           st >> studentObject.lastName; //read the lastname
-           for (int i = 0; i< 5; i++){
+    ifstream inputFile(fileName);
+    string line;
+    list<student> myList;//create a list of Student objects
+    if(inputFile)
+    {
+        int k;
+        k = 0;
+        while(getline(inputFile, line))
+        {
+            k++;
+            if (k < 2)
+            continue;
+            student studentObject;
+            istringstream st(line);
+            st >> studentObject.firstName; //read the firstname
+            st >> studentObject.lastName; //read the lastname
+            for (int i = 0; i< 5; i++){
                 string nd;
                 st >> nd;
                 //cout << nd << endl;
                 studentObject.grade.push_back(stoi(nd));
+            }
+            st >> studentObject.final;
 
-           }
-           st >> studentObject.final;
+            if(st)//check if input succeded
+            {
+                myList.push_back(studentObject);//add the studentObject into the list
+            }
+        }
+    }
+    else
+    {
+        cout << "Failas negali buti atidarytas" << endl;
+    }
 
-           if(st)//check if input succeded
-           {
-               myList.push_back(studentObject);//add the studentObject into the vector
-           }
+    clock_t end = clock();
+    cout << "Failo is " << myList.size() << " irasu nuskaitymo laikas (List): ";
+    CalculateTimeAndPrint(begin, end);
 
-       }
-
-   }
-            clock_t end = clock();
-           cout << "Failo is " << myList.size() << " irasu nuskaitymo laikas (List): ";
-           CalculateTimeAndPrint(begin, end);
-
-           return myList;
+    return myList;
 }
 
 vector<student> GetStudents(int cStudents){
