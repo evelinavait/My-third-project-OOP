@@ -56,6 +56,3 @@ Vardas2     Pavardė2    7    10    8    5    4    6
 * Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz 2.50 GHz
 * 4GB RAM
 * Windows 7 Ultimate; 64 bitų operacinė sistema
-
-![image](https://user-images.githubusercontent.com/72965991/198505010-6d2fe1a6-0d35-4369-a9f5-064b22af5dad.png)
-
