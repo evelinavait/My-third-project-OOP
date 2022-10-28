@@ -69,7 +69,7 @@ Vardas2     Pavardė2    7    10    8    5    4    6
 ![1000000](https://user-images.githubusercontent.com/72965991/198505439-cf7a7b0b-dc99-423d-90f1-f441353d54c0.png)
 
 # v0.4 versija
-* Atliekamas **konteinerių testavimas**: išmatuojama patobulintos v0.3.1 realizacijos veikimo sparta priklausomai nuo naudojamo vieno iš dviejų konteinerių:
+* Atliekamas **konteinerių testavimas**: išmatuojama patobulintos `v0.3.1` realizacijos veikimo sparta priklausomai nuo naudojamo vieno iš dviejų konteinerių:
     * [std::vector](http://en.cppreference.com/w/cpp/container/vector)
     * [std::list](http://en.cppreference.com/w/cpp/container/list)
 
