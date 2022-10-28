@@ -37,7 +37,7 @@ Vardas2     Pavardė2    7    10    8    5    4    6
 ```
 * Atliekama programos veikimo greičio (spartos) analizė: t.y. išmatuojama programos sparta išskiriant kiek laiko užtruko:
     - [x] duomenų nuskaitymas iš failų;
-* Programa papildoma taip, kad ji veiktų, kai įrašų skaičius (n) yra nežinomas iš anksto, t.y. vartotojas įvedant į konsolę nusprendžia, kokį failą generuoti.
+* Programa papildoma taip, kad ji veiktų, kai įrašų skaičius (n) yra nežinomas iš anksto, t. y. vartotojas įvedant į konsolę nusprendžia, kokį failą generuoti.
 * Minimaliai panaudojamas išimčių valdymas (v0.2.1 versijoje buvo panaudota `readFile.exceptions (std::ifstream::failbit | std::ifstream::badbit);`)
  ```c++
  try {
