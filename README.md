@@ -1,14 +1,14 @@
 # My-first-project-OOP #
 Project C++ Programming
 
-# [v0.1 versija](https://github.com/evelinavait/My-first-project-OOP/tree/v0.1)
+# v0.1 versija
 Papildyta programa taip, kad ji veiktų ir tokiu atveju, kai namų darbų skaičius (n) yra nežinomas iš anksto, t.y. tik įvedimo metu vartotojas nusprendžia kuomet jis jau įvedė visų namų darbų rezultatus. Ši dalis realizuota rezultatus saugant į: [std::vector] tipo konteinerį.
 
-# [v0.2 versija](https://github.com/evelinavait/My-first-project-OOP/tree/v0.2)
+# v0.2 versija
 main.cpp ir my_lib.hpp
 `v0.1` versija naudojant tradicinį dinaminį C masyvą.
 
-# [v0.2.1 versija](https://github.com/evelinavait/My-first-project-OOP/tree/v0.2.1)
+# v0.2.1 versija
 
 main2.cpp ir my_lib2.hpp
 * `v0.2` versijoje yra sukuriamas ir užpildomas failas "kursiokai.txt". 
