@@ -23,6 +23,32 @@ Project C++ Programming
 
 ![285697313_627629259060279_957838069182607771_n](https://user-images.githubusercontent.com/72965991/195760793-ea7b354f-496f-4786-8d20-58b0f01ff2e5.png)
 
+Patobulinta `v0.3` versijos realizacija
+* Funkcijos, nauji duomenų tipai (struct’ūros) perkeliami į antraštinius (angl. **header (*.h)**) failus.
+* Sugeneruojami atsitiktiniai studentų sąrašų failai, sudaryti iš: 1 000, 10 000, 100 000, 1 000 000 įrašų, kurių (preliminari) struktūra atitinka failų `Studentai*.txt failas testavimui` struktūrą. Vardai ir Pavardės generuojami "šabloniniai", kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t.
+```
+Vardas      Pavarde     ND1  ND2   ND3  ND4  ND5  Egzaminas
+Vardas1     Pavardė1    8    9     10   6    10   9
+Vardas2     Pavardė2    7    10    8    5    4    6
+...
+```
+* Atliekama programos veikimo greičio (spartos) analizė: t.y. išmatuojama programos sparta išskiriant kiek laiko užtruko:
+    - [x] duomenų nuskaitymas iš failų;
+* Programa papildoma taip, kad ji veiktų, kai įrašų skaičius (n) yra nežinomas iš anksto, t.y. vartotojas įvedant į konsolę nusprendžia, kokį failą generuoti.
+* Minimaliai panaudojamas išimčių valdymas (v0.2.1 versijoje buvo panaudota `readFile.exceptions (std::ifstream::failbit | std::ifstream::badbit);`)
+ ```c++
+ try {
+        cout << "Iveskite studentu kieki: ";
+        cin >> c;
+        GetStudents(c);
+     } catch(const ios_base::failure& e) {
+        cout << "Netinkamai ivestas studentu kiekis" << endl;
+        cout << e.what() << endl;
+}
+```
+![1000](https://user-images.githubusercontent.com/72965991/198505285-532c0c77-7b4e-40d6-a6ae-e2dcad921821.png)
+![10000](https://user-images.githubusercontent.com/72965991/198505302-b6be7151-c937-4c1b-b858-ff7b10c36a3c.png)
+
 
 ## Testų metu naudoto kompiuterio parametrai: ##
 
