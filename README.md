@@ -59,7 +59,7 @@ Vardas2     Pavardė2    7    10    8    5    4    6
         cout << e.what() << endl;
 }
 ```
-# v0.4 versija
+# [v0.4 versija](https://github.com/evelinavait/My-first-project-OOP/tree/v0.4)
 * Atliekamas **konteinerių testavimas**: išmatuojama patobulintos `v0.3.1` realizacijos veikimo sparta priklausomai nuo naudojamo vieno iš dviejų konteinerių:
     * [std::vector](http://en.cppreference.com/w/cpp/container/vector)
     * [std::list](http://en.cppreference.com/w/cpp/container/list)
@@ -70,3 +70,9 @@ Vardas2     Pavardė2    7    10    8    5    4    6
 * studentų rūšiavimas į dvi grupes/kategorijas;
     
 Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 100 000, 1 000 000 įrašų.
+
+## Testų metu naudoto kompiuterio parametrai: ##
+
+* Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz 2.50 GHz
+* 4GB RAM
+* Windows 7 Ultimate; 64 bitų operacinė sistema
