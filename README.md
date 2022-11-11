@@ -103,12 +103,6 @@ Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 10
 * Naudojant 1 strategiją programos vykdymo greitis gana spartus, tačiau 1 strategija yra neefektyvi užimamos atminties atžvilgiu. Naudojant tiek `std::vector`, tiek `std::list` konteinerius duomenų nuskaitymo sparta yra panaši. List'ų struktūra sudėtingesnė, todėl skirstant studentus į dvi grupes/kategorijas, jie yra lėtesni nei vektoriai.
 * Atminties atveju 2 strategija efektyvesnė, tačiau dažni trynimai gali būti "skausmingi".
 
-## Naudojimosi instrukcija ##
-1. Į konsolę įvedamas studentų skaičius (n), t. y. kokį failą norima generuoti. Taip sugeneruojami atsitiktiniai studentų sąrašų failai, kurių (preliminarioje) struktūroje generuojami Vardai ir Pavardės, kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t. Taip pat sugeneruojami atsitiktiniai namų darbų ir egzamino įvertinimų balai (ND1 ND2 ND3 ND4 ND5 Egzaminas).
-2. Atliekama programos veikimo greičio (spartos) analizė. <br>
-2.1 Jei failas jau egzistuoja anksčiau direktorijoje sukurtame **"files/"** aplankale, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotu failu. <br>
-2.2 Jei failas dar neegzistuoja, pirmiausia  failas sugeneruojamas, vartotojui į konsolę įvedant, kokį failą norima generuoti, ir tik tuomet vykdoma programos spartos analizė.
-
 ## Įdiegimo instrukcija ##
 1. Parsisiųsti norimą programos versijos (v1.0) kodą iš Releases;
 2. Kodą sukompiliuoti per komandinę eilutę arba pasirinktą IDE.
@@ -117,6 +111,11 @@ Naudojant `CMakeLists.txt`:
 cmake .
 cmake --build .
 ```
+## Naudojimosi instrukcija ##
+1. Į konsolę įvedamas studentų skaičius (n), t. y. kokį failą norima generuoti. Taip sugeneruojami atsitiktiniai studentų sąrašų failai, kurių (preliminarioje) struktūroje generuojami Vardai ir Pavardės, kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t. Taip pat sugeneruojami atsitiktiniai namų darbų ir egzamino įvertinimų balai (ND1 ND2 ND3 ND4 ND5 Egzaminas).
+2. Atliekama programos veikimo greičio (spartos) analizė. <br>
+2.1 Jei failas jau egzistuoja anksčiau direktorijoje sukurtame **"files/"** aplankale, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotu failu. <br>
+2.2 Jei failas dar neegzistuoja, pirmiausia  failas sugeneruojamas, vartotojui į konsolę įvedant, kokį failą norima generuoti, ir tik tuomet vykdoma programos spartos analizė.
 
 ## Testų metu naudoto kompiuterio parametrai: ##
 
