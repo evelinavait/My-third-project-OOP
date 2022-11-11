@@ -71,6 +71,25 @@ Vardas2     Pavardė2    7    10    8    5    4    6
     
 Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 100 000, 1 000 000 įrašų.
 
+# v0.4.1 versija
+Patobulinta `v0.4` versijos realizacija
+
+* Atliekamas **konteinerių testavimas**: išmatuojama patobulintos `v0.3.1` realizacijos veikimo sparta priklausomai nuo naudojamo vieno iš dviejų konteinerių:
+    * [std::vector](http://en.cppreference.com/w/cpp/container/vector)
+    * [std::list](http://en.cppreference.com/w/cpp/container/list)
+
+:heavy_exclamation_mark:  Tiek failų kūrimas, tiek ir surūšiuotų rezultatų išvedimas į failus nepriklauso nuo naudojamo konteinerio, todėl `v0.4.1` versijoje matuojami šie programoje atliekami žingsniai (patobulinta programos veikimo greičio (spartos) analizė):
+- [x] duomenų nuskaitymas iš failų;
+- [x] studentų rūšiavimas (dalijimas) į dvi grupes/kategorijas;
+    
+Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 100 000, 1 000 000 įrašų. <br>
+* Jei failas jau egzistuoja anksčiau direktorijoje sukurtame **"files/"** aplankale, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotu failu. 
+* Jei failas dar neegzistuoja, pirmiausia  failas sugeneruojamas, vartotojui į konsolę įvedant, kokį failą norima generuoti, ir tik tuomet vykdoma programos spartos analizė.
+
+### Išvados
+* Naudojant tiek `std::vector`, tiek `std::list` konteinerius duomenų nuskaitymo sparta yra panaši.
+* List'ų struktūra sudėtingesnė, todėl skirstant studentus į dvi grupes/kategorijas, jie yra lėtesni nei vektoriai.
+
 ## Testų metu naudoto kompiuterio parametrai: ##
 
 * Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz 2.50 GHz
