@@ -132,8 +132,8 @@ Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atl
 * Atminties atveju 2 strategija efektyvesnė, tačiau dažni trynimai gali būti "skausmingi".
  
 ## Naudojimosi instrukcija ##
-Studentų kiekis
-Pasirinkti, ar generuoti failus, ar skaityti esamus failus
+1. Studentų kiekis
+2. Pasirinkti, ar generuoti failus, ar skaityti esamus failus
 
 ## Įdiegimo instrukcija ##
 1. Parsisiųsti norimą programos versijos (v1.0) kodą iš Releases;
