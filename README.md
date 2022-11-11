@@ -102,7 +102,7 @@ Patobulinta `v0.4` versijos realizacija
     
 Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 100 000, 1 000 000 įrašų. <br>
 * Jei failas jau egzistuoja, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotu failu. 
-* Jei failas dar neegzistuoja, pirmiausia  failas sugeneruojamas, vartotojui į konsolę įvedant, kokį failą generuoti, ir tik tuomet vykdoma programos spartos analizė.
+* Jei failas dar neegzistuoja, pirmiausia  failas sugeneruojamas, vartotojui į konsolę įvedant, kokį failą norima generuoti, ir tik tuomet vykdoma programos spartos analizė.
 
 ![v041_1000](https://user-images.githubusercontent.com/72965991/201263423-5aab8de3-f3ae-4578-826a-48ae5afe3e62.png)
 ![v041_1_1000](https://user-images.githubusercontent.com/72965991/201263444-e2f400ac-bffc-4b26-92d7-79c153425a7b.png)
