@@ -16,4 +16,3 @@ float Final(int exam, vector<int> grade);
 int Median(vector<int> arr);
 
 #endif // CALCULATIONS_H_INCLUDED
-

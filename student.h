@@ -11,6 +11,7 @@
 #include <bits/stdc++.h>
 #include <ctime>
 #include <fstream>
+#include <iterator>
 using std::vector;
 using namespace std;
 
@@ -28,10 +29,10 @@ string ToString(int value);
 void CalculateTimeAndPrint(clock_t begin, clock_t end);
 void PrintStudents(vector<student> students, string fileName);
 bool SmartAndStupid(vector<student> students);
+void SmartAndStupidl(list<student> students);
 student CreateStudent(int cGrades, int studentId);
 vector<student> ReadFromFile (string fileName);
 list<student> ReadFromFileList (string fileName);
-vector<student> GetStudents(int cStudents);
+void GetStudents(int cStudents);
 
 #endif // STUDENT_H_INCLUDED
-

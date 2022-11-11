@@ -49,8 +49,8 @@ bool SmartAndStupid(vector<student> students)
     clock_t begin = clock();
     sort(students.begin(), students.end(), compareInterval);
     clock_t end = clock();
-    cout << students.size() << " Irasu rusiavimo didejimo tvarka laikas, su sort funkcija (Vector): ";
-    CalculateTimeAndPrint(begin, end);
+//    cout << students.size() << " Irasu rusiavimo didejimo tvarka laikas, su sort funkcija (Vector): ";
+//    CalculateTimeAndPrint(begin, end);
 
     begin = clock();
     for(int i=0; i < students.size(); i++)
@@ -66,19 +66,46 @@ bool SmartAndStupid(vector<student> students)
     }
     end = clock();
 
-    cout << students.size() << " Irasu dalijimo i dvi grupes laikas (Vector): ";
+    cout << endl << students.size() << " Irasu dalijimo i dvi grupes laikas (Vector): ";
     CalculateTimeAndPrint(begin, end);
 
     begin = clock();
     PrintStudents(stupid, ToString(students.size()) + "nelaimingi");
     end = clock();
-    cout << students.size() << " Irasu nelaimingi irasymo i faila laikas (Vector): ";
-    CalculateTimeAndPrint(begin, end);
+//    cout << students.size() << " Irasu nelaimingi irasymo i faila laikas (Vector): ";
+//    CalculateTimeAndPrint(begin, end);
 
     begin = clock();
     PrintStudents(smart, ToString(students.size()) + "protingi");
     end = clock();
-    cout << students.size() << " Irasu protingi irasymo i faila laikas (Vector): ";
+//    cout << students.size() << " Irasu protingi irasymo i faila laikas (Vector): ";
+//    CalculateTimeAndPrint(begin, end);
+}
+
+void SmartAndStupidl(list<student> students){
+    list<student> stupid;
+    list<student> smart;
+    int listSize = students.size();
+
+    clock_t begin = clock();
+//    clock_t begin = clock();
+    students.sort(compareInterval);
+//    clock_t end = clock();
+//    cout << students.size() << " Irasu rusiavimo didejimo tvarka laikas, su sort funkcija (List): ";
+//    CalculateTimeAndPrint(begin, end);
+
+    list<student>::iterator it = students.begin();
+    while(it != students.end()){
+//        cout << (*it).final << endl;
+        if ((*it).final < 5) {
+            stupid.push_back(*it); // dereference *it kad gauti elementą
+        } else {
+            smart.push_back(*it);
+        }
+            ++it;
+    }
+    clock_t end = clock();
+    cout << listSize << " Irasu dalijimo i dvi grupes laikas (List): ";
     CalculateTimeAndPrint(begin, end);
 }
 
@@ -145,7 +172,7 @@ vector<student> ReadFromFile (string fileName){
 //        std::cout <<elem.firstName<<" "<<elem.lastName<<" "<<elem.final<<" "<<std::endl;
 //    }
     clock_t end = clock();
-    cout << "Failo is " << myVec.size() << " irasu nuskaitymo laikas (Vector): ";
+    cout << endl << "Failo is " << myVec.size() << " irasu nuskaitymo laikas (Vector): ";
     CalculateTimeAndPrint(begin, end);
 
     return myVec;
@@ -195,36 +222,36 @@ list<student> ReadFromFileList (string fileName){
     return myList;
 }
 
-vector<student> GetStudents(int cStudents){
-    clock_t begin = clock();
+
+void GetStudents(int cStudents){
     int cGrades = 5;
 
-    string check;
-    vector<student> students;
-    for(int i=0; i < cStudents; i++)
-    {
-        student singleStudent = CreateStudent(cGrades, i+1);
-        students.push_back(singleStudent);
-    }
-
-    stringstream ss;
-    std::string stringStudents;
-    ss << cStudents;
-    ss >> stringStudents;
-
-    PrintStudents(students, stringStudents);
-
     string fileNameToFunction = "files/" + ToString(cStudents) + "-studentai.txt";
+    ifstream ifile;
+    ifile.open(fileNameToFunction);
+    if(!ifile) {
+        cout << "Failas generuojamas" << endl;
+        vector<student> students;
+        for(int i=0; i < cStudents; i++)
+        {
+            student singleStudent = CreateStudent(cGrades, i+1);
+            students.push_back(singleStudent);
+        }
+
+        stringstream ss;
+        std::string stringStudents;
+        ss << cStudents;
+        ss >> stringStudents;
+
+        PrintStudents(students, stringStudents);
+}
+        else {
+        cout << "Failas jau egzistuoja" << endl;
+        ifile.close();
+        }
     vector<student> readFromFile = ReadFromFile(fileNameToFunction);
     list<student> readFromFileList = ReadFromFileList(fileNameToFunction);
 
-
-    SmartAndStupid(students);
-    clock_t end = clock();
-    cout << endl << students.size() << " Irasu testavimo laikas (Vector): ";
-    CalculateTimeAndPrint(begin, end);
-
-    cout << endl;
-
-    return students;
+    SmartAndStupid(readFromFile);
+    SmartAndStupidl(readFromFileList);
 }
