@@ -101,7 +101,8 @@ Patobulinta `v0.4` versijos realizacija
 - [x] studentų rūšiavimas į dvi grupes/kategorijas;
     
 Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 100 000, 1 000 000 įrašų. <br>
-Jei failas jau egzistuoja, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotu failu. Jei failas dar neegzistuoja, pirmiausia  failas sugeneruojamas, vartotojui į konsolę įvedant, kokį failą generuoti, ir tik tuomet vykdoma programos spartos analizė.
+* Jei failas jau egzistuoja, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotu failu. 
+* Jei failas dar neegzistuoja, pirmiausia  failas sugeneruojamas, vartotojui į konsolę įvedant, kokį failą generuoti, ir tik tuomet vykdoma programos spartos analizė.
 
 ![v041_1000](https://user-images.githubusercontent.com/72965991/201263423-5aab8de3-f3ae-4578-826a-48ae5afe3e62.png)
 ![v041_1_1000](https://user-images.githubusercontent.com/72965991/201263444-e2f400ac-bffc-4b26-92d7-79c153425a7b.png)
@@ -110,6 +111,9 @@ Jei failas jau egzistuoja, programos veikimo greičio (spartos) analizė atliek
 ![v041_1000000](https://user-images.githubusercontent.com/72965991/201263478-cbeade98-a0a4-4d0d-ae7d-cee6ba4b9ca3.png)
 
 Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atliekant programos veikimo greičio (spartos) analizę su failu, sudarytu iš 1 000 000 įrašų.
+![v041_CPU_1000000](https://user-images.githubusercontent.com/72965991/201263671-5cc46678-7983-42ea-ae2c-4b092713254d.png)![v041_1_CPU_1000000](https://user-images.githubusercontent.com/72965991/201263675-5c41d706-fbe8-4f5b-a710-0ad1c015d653.png)
+
+
 
 ### Išvados
 * Naudojant tiek `std::vector`, tiek `std::list` konteinerius duomenų nuskaitymo sparta yra panaši.
