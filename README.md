@@ -127,6 +127,12 @@ Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atl
 * Parengta naudojimosi instrukcija, t. y. aprašyti pagrindiniai žingsniai. 
 * Parengta įdiegimo instrukcija, t. y. sukurtas **cmake** `CMakeLists.txt` (bet kokios OS atveju).
 
+![v1_1000](https://user-images.githubusercontent.com/72965991/201288131-2f6e34c9-58b0-4ddc-8449-618f7ead5dd9.png)
+![v1_10000](https://user-images.githubusercontent.com/72965991/201287370-44ea3516-6a78-4547-8e4f-392cc694744c.png)
+![v1_100000](https://user-images.githubusercontent.com/72965991/201286588-6edc7a1e-3e55-46e6-8dec-1cc5dcb2df0a.png)
+![v1_1000000](https://user-images.githubusercontent.com/72965991/201286849-4fc653fa-be2d-4b2c-b968-6e34513320d0.png)
+
+
 ### Išvados ###
 * Naudojant 1 strategiją programos vykdymo greitis gana spartus, tačiau 1 strategija yra neefektyvi užimamos atminties atžvilgiu. Naudojant tiek `std::vector`, tiek `std::list` konteinerius duomenų nuskaitymo sparta yra panaši. List'ų struktūra sudėtingesnė, todėl skirstant studentus į dvi grupes/kategorijas, jie yra lėtesni nei vektoriai.
 * Atminties atveju 2 strategija efektyvesnė, tačiau dažni trynimai gali būti "skausmingi".
