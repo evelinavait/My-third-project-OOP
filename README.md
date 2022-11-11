@@ -146,13 +146,8 @@ Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atl
 ## Įdiegimo instrukcija ##
 1. Parsisiųsti norimą programos versijos (v1.0) kodą iš Releases;
 2. Kodą sukompiliuoti per komandinę eilutę arba pasirinktą IDE.
-Naudojant Windows OS:
-* Parsisiųsti mingw32 arba bet kokią komandų eilutės paketų tvarkyklę leidžiančią naudoti `Makefile`.
-* Tą padarius nueikite į Command Prompt arba PowerShell, nueikite į vietą, kurioje išsaugoti failai. 
-* Parašykite `Make`. 
-* Kai bus sukompiliuotas vykdomasis (angl. executable) failas, įveskite `./main` ir programa bus paleista.
-
-Naudojant MacOS, Linux, ar kitą UNIX sistemą:
-* Į terminalą suvedama komanda `Make`, kuri sukuria programos paleidžiamąjį failą.
-* Suvedus komandą `./main` bus paleidžiama programa.
-Norint išrinti *.o ir main.exe failus, parašyti `make clean`.
+Naudojant CMakeLists.txt:
+```
+cmake .
+cmake --build .
+```
