@@ -146,7 +146,7 @@ Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atl
 ## Įdiegimo instrukcija ##
 1. Parsisiųsti norimą programos versijos (v1.0) kodą iš Releases;
 2. Kodą sukompiliuoti per komandinę eilutę arba pasirinktą IDE.
-Naudojant CMakeLists.txt:
+Naudojant `CMakeLists.txt`:
 ```
 cmake .
 cmake --build .
