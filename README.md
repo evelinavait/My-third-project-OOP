@@ -123,8 +123,7 @@ Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atl
 * Optimizuojama studentų rūšiavimo (skirstymo) į dvi kategorijas ("stupid" ir "smart") realizacija: t. y. `std::vector` ir `std::list` konteinerių tipams išmatuojama programos veikimo sparta, priklausomai nuo studentų skirstymo į dvi kategorijas strategijos:
   * **1 strategija**: Bendro "students" konteinerio (`vector` ir `list` tipų) skaidymas (rūšiavimas) į du naujus to paties tipo konteinerius: "stupid" ir "smart". Tokiu būdu tas pats studentas yra dvejuose konteineriuose: bendrame "students" ir viename iš suskaidytų ("stupid" arba "smart").
   * **2 strategija**: Bendro "students" konteinerio (`vector` ir `list`) skaidymas (rūšiavimas) panaudojant tik vieną naują konteinerį: "stupid". Tokiu būdu, jei studentas yra nelaimingas "stupid", jį turime įkelti į naująjį "stupid" konteinerį ir ištrinti iš bendro "students" konteinerio. Po šio žingsnio "students" konteineryje liks vien tik protingi "smart".
-* Ant vieno fiksuoto konteinerio - `vector` studentų rūšiavimo (dalijimo) procedūrai paspartinti, t. y. optimizuoti pritaikytas algoritmas `std::stable_partition`. visi elementai kurie
-tenkina predikatą eitų prieš tuos, kurie netenkina.
+* Ant vieno fiksuoto konteinerio - `vector` studentų rūšiavimo (dalijimo) procedūrai paspartinti, t. y. optimizuoti pritaikytas algoritmas `std::stable_partition`: visi elementai, kurių galutinis vidurkis > 5 eina prieš tuos, kurie netenkina sąlygos (galutinis vidurkis < 5).
 * Parengta naudojimosi instrukcija, t. y. aprašyti pagrindiniai žingsniai. 
 * Parengta įdiegimo instrukcija, t. y. sukurtas **cmake** `CMakeLists.txt` (bet kokios OS atveju).
 
