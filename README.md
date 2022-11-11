@@ -101,7 +101,7 @@ Patobulinta `v0.4` versijos realizacija
 - [x] studentų rūšiavimas į dvi grupes/kategorijas;
     
 Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 100 000, 1 000 000 įrašų. <br>
-* Jei failas jau egzistuoja, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotu failu. 
+* Jei failas jau egzistuoja anksčiau direktorijoje sukurtame **"files/"** aplankale, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotu failu. 
 * Jei failas dar neegzistuoja, pirmiausia  failas sugeneruojamas, vartotojui į konsolę įvedant, kokį failą norima generuoti, ir tik tuomet vykdoma programos spartos analizė.
 
 ![v041_1000](https://user-images.githubusercontent.com/72965991/201263423-5aab8de3-f3ae-4578-826a-48ae5afe3e62.png)
