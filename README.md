@@ -129,8 +129,8 @@ tenkina predikatą eitų prieš tuos, kurie netenkina.
 * Parengta įdiegimo instrukcija, t. y. sukurtas **cmake** `CMakeLists.txt` (bet kokios OS atveju).
 
 ### Išvados ###
-    * Naudojant 1 strategiją programos vykdymo greitis gana spartus, tačiau 1 strategija yra neefektyvi užimamos atminties atžvilgiu. Naudojant tiek `std::vector`, tiek `std::list` konteinerius duomenų nuskaitymo sparta yra panaši. List'ų struktūra sudėtingesnė, todėl skirstant studentus į dvi grupes/kategorijas, jie yra lėtesni nei vektoriai.
-	* Atminties atveju 2 strategija efektyvesnė, tačiau dažni trynimai gali būti "skausmingi".
+* Naudojant 1 strategiją programos vykdymo greitis gana spartus, tačiau 1 strategija yra neefektyvi užimamos atminties atžvilgiu. Naudojant tiek `std::vector`, tiek `std::list` konteinerius duomenų nuskaitymo sparta yra panaši. List'ų struktūra sudėtingesnė, todėl skirstant studentus į dvi grupes/kategorijas, jie yra lėtesni nei vektoriai.
+* Atminties atveju 2 strategija efektyvesnė, tačiau dažni trynimai gali būti "skausmingi".
  
 ## Naudojimosi instrukcija ##
 Studentų kiekis
