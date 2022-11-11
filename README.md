@@ -133,6 +133,7 @@ Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atl
 ![v1_1000000](https://user-images.githubusercontent.com/72965991/201286849-4fc653fa-be2d-4b2c-b968-6e34513320d0.png)
 
 Žemiau pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atliekant programos veikimo greičio (spartos) analizę su failu, sudarytu iš 1 000 000 įrašų.
+
 <img src="https://user-images.githubusercontent.com/72965991/201289257-f8f0b3a4-1941-4c6d-9b51-2e6b3c35ff68.png)" width="650">
 
 ### Išvados ###
