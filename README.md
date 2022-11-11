@@ -90,7 +90,7 @@ Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 10
 * Naudojant tiek `std::vector`, tiek `std::list` konteinerius duomenų nuskaitymo sparta yra panaši.
 * List'ų struktūra sudėtingesnė, todėl skirstant studentus į dvi grupes/kategorijas, jie yra lėtesni nei vektoriai.
 
-# v1.0 versija
+# [v1.0 versija](https://github.com/evelinavait/My-first-project-OOP/tree/v1.0)
 
 * Optimizuojama studentų rūšiavimo (skirstymo) į dvi kategorijas ("stupid" ir "smart") realizacija: t. y. `std::vector` ir `std::list` konteinerių tipams išmatuojama programos veikimo sparta, priklausomai nuo studentų skirstymo į dvi kategorijas strategijos:
   * **1 strategija**: Bendro "students" konteinerio (`vector` ir `list` tipų) skaidymas (rūšiavimas) į du naujus to paties tipo konteinerius: "stupid" ir "smart". Tokiu būdu tas pats studentas yra dvejuose konteineriuose: bendrame "students" ir viename iš suskaidytų ("stupid" arba "smart").
