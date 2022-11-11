@@ -289,7 +289,6 @@ list<student> ReadFromFileList (string fileName){
     return myList;
 }
 
-
 void GetStudents(int cStudents){
     int cGrades = 5;
 
