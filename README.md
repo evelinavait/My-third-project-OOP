@@ -134,7 +134,7 @@ Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atl
 
 Žemiau pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atliekant programos veikimo greičio (spartos) analizę su failu, sudarytu iš 1 000 000 įrašų.
 
-<img src="https://user-images.githubusercontent.com/72965991/201289257-f8f0b3a4-1941-4c6d-9b51-2e6b3c35ff68.png)" width="650">
+<img src="https://user-images.githubusercontent.com/72965991/201289257-f8f0b3a4-1941-4c6d-9b51-2e6b3c35ff68.png" width="650">
 
 ### Išvados ###
 * Naudojant 1 strategiją programos vykdymo greitis gana spartus, tačiau 1 strategija yra neefektyvi užimamos atminties atžvilgiu. Naudojant tiek `std::vector`, tiek `std::list` konteinerius duomenų nuskaitymo sparta yra panaši. List'ų struktūra sudėtingesnė, todėl skirstant studentus į dvi grupes/kategorijas, jie yra lėtesni nei vektoriai.
