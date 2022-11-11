@@ -71,7 +71,7 @@ Vardas2     Pavardė2    7    10    8    5    4    6
     
 Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 100 000, 1 000 000 įrašų.
 
-# v0.4.1 versija
+# [v0.4.1 versija](https://github.com/evelinavait/My-first-project-OOP/releases/tag/v0.4.1)
 Patobulinta `v0.4` versijos realizacija
 
 * Atliekamas **konteinerių testavimas**: išmatuojama patobulintos `v0.3.1` realizacijos veikimo sparta priklausomai nuo naudojamo vieno iš dviejų konteinerių:
