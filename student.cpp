@@ -327,7 +327,7 @@ void GetStudents(int cStudents){
 
     cout << endl << "Strategija 2" << endl;
 //    clock_t begin = clock();
-    SmartAndStupid2NotOptim(readFromFile);
+//    SmartAndStupid2NotOptim(readFromFile);
     SmartAndStupid2(readFromFile);
     SmartAndStupidl2(readFromFileList);
 //    clock_t end = clock();
