@@ -112,7 +112,7 @@ Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 10
 
 Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atliekant programos veikimo greičio (spartos) analizę su failu, sudarytu iš 1 000 000 įrašų.
 
-<img src="https://user-images.githubusercontent.com/72965991/201263671-5cc46678-7983-42ea-ae2c-4b092713254d.png" width="650"> | <img src="https://user-images.githubusercontent.com/72965991/201263675-5c41d706-fbe8-4f5b-a710-0ad1c015d653.png" height="50">
+<img src="https://user-images.githubusercontent.com/72965991/201263671-5cc46678-7983-42ea-ae2c-4b092713254d.png" width="650"> | <img src="https://user-images.githubusercontent.com/72965991/201263675-5c41d706-fbe8-4f5b-a710-0ad1c015d653.png" height="400">
 
 ### Išvados
 * Naudojant tiek `std::vector`, tiek `std::list` konteinerius duomenų nuskaitymo sparta yra panaši.
