@@ -130,7 +130,13 @@ Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atl
 ### Išvados ###
 * Naudojant 1 strategiją programos vykdymo greitis gana spartus, tačiau 1 strategija yra neefektyvi užimamos atminties atžvilgiu. Naudojant tiek `std::vector`, tiek `std::list` konteinerius duomenų nuskaitymo sparta yra panaši. List'ų struktūra sudėtingesnė, todėl skirstant studentus į dvi grupes/kategorijas, jie yra lėtesni nei vektoriai.
 * Atminties atveju 2 strategija efektyvesnė, tačiau dažni trynimai gali būti "skausmingi".
- 
+
+## Testų metu naudoto kompiuterio parametrai: ##
+
+* Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz 2.50 GHz
+* 4GB RAM
+* Windows 7 Ultimate; 64 bitų operacinė sistema
+
 ## Naudojimosi instrukcija ##
 1. Studentų kiekis
 2. Pasirinkti, ar generuoti failus, ar skaityti esamus failus
@@ -148,9 +154,3 @@ Naudojant MacOS, Linux, ar kitą UNIX sistemą:
 * Į terminalą suvedama komanda `Make`, kuri sukuria programos paleidžiamąjį failą.
 * Suvedus komandą `./main` bus paleidžiama programa.
 Norint išrinti *.o ir main.exe failus, parašyti `make clean`.
-
-## Testų metu naudoto kompiuterio parametrai: ##
-
-* Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz 2.50 GHz
-* 4GB RAM
-* Windows 7 Ultimate; 64 bitų operacinė sistema
