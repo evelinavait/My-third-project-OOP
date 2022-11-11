@@ -89,6 +89,27 @@ Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atl
 
 ![CPU_1000000](https://user-images.githubusercontent.com/72965991/198593227-25df8dd9-f475-451c-970b-8e126354bbad.png)
 
+# v0.4.1 versija
+Patobulinta `v0.4` versijos realizacija
+
+* Atliekamas **konteinerių testavimas**: išmatuojama patobulintos `v0.3.1` realizacijos veikimo sparta priklausomai nuo naudojamo vieno iš dviejų konteinerių:
+    * [std::vector](http://en.cppreference.com/w/cpp/container/vector)
+    * [std::list](http://en.cppreference.com/w/cpp/container/list)
+
+:heavy_exclamation_mark:  Tiek failų kūrimas, tiek ir surūšiuotų rezultatų išvedimas į failus nepriklauso nuo naudojamo konteinerio, todėl `v0.4.1` versijoje matuojami šie programoje atliekami žingsniai (patobulinta programos veikimo greičio (spartos) analizė):
+
+    - [x] duomenų nuskaitymas iš failų;
+    - [x] studentų rūšiavimas į dvi grupes/kategorijas;
+    
+Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 100 000, 1 000 000 įrašų.
+
+Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atliekant programos veikimo greičio (spartos) analizę su failu, sudarytu iš 1 000 000 įrašų.
+
+### Išvados
+    * Naudojant tiek `std::vector`, tiek `std::list` konteinerius duomenų nuskaitymo sparta yra panaši.
+    * List'ų struktūra sudėtingesnė, todėl skirstant studentus į dvi grupes/kategorijas, jie yra lėtesni nei vektoriai.
+
+
 ## Testų metu naudoto kompiuterio parametrai: ##
 
 * Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz 2.50 GHz
