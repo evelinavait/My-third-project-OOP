@@ -98,7 +98,7 @@ Patobulinta `v0.4` versijos realizacija
 
 :heavy_exclamation_mark:  Tiek failų kūrimas, tiek ir surūšiuotų rezultatų išvedimas į failus nepriklauso nuo naudojamo konteinerio, todėl `v0.4.1` versijoje matuojami šie programoje atliekami žingsniai (patobulinta programos veikimo greičio (spartos) analizė):
 - [x] duomenų nuskaitymas iš failų;
-- [x] studentų rūšiavimas į dvi grupes/kategorijas;
+- [x] studentų rūšiavimas (dalijimas) į dvi grupes/kategorijas;
     
 Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 100 000, 1 000 000 įrašų. <br>
 * Jei failas jau egzistuoja anksčiau direktorijoje sukurtame **"files/"** aplankale, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotu failu. 
