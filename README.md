@@ -138,7 +138,7 @@ Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atl
 * Windows 7 Ultimate; 64 bitų operacinė sistema
 
 ## Naudojimosi instrukcija ##
-1. Į konsolę įvedamas studentų skaičius (n), t. y. kokį failą norima generuoti. Taip sugeneruojami atsitiktiniai studentų sąrašų failai, kurių (preliminari) struktūra atitinka failų `Studentai*.txt failas testavimui` struktūrą. Vardai ir Pavardės generuojami "šabloniniai", kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t.
+1. Į konsolę įvedamas studentų skaičius (n), t. y. kokį failą norima generuoti. Taip sugeneruojami atsitiktiniai studentų sąrašų failai, kurių (preliminarioje) struktūroje generuojami Vardai ir Pavardės, kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t. Taip pat sugeneruojami atsitiktiniai namų darbų ir egzamino įvertinimų balai (ND1 ND2 ND3 ND4 ND5 Egzaminas).
 2. Atliekama programos veikimo greičio (spartos) analizė. <br>
 2.1 Jei failas jau egzistuoja anksčiau direktorijoje sukurtame **"files/"** aplankale, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotu failu. <br>
 2.2 Jei failas dar neegzistuoja, pirmiausia  failas sugeneruojamas, vartotojui į konsolę įvedant, kokį failą norima generuoti, ir tik tuomet vykdoma programos spartos analizė.
