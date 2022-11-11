@@ -101,7 +101,7 @@ Patobulinta `v0.4` versijos realizacija
 - [x] studentų rūšiavimas į dvi grupes/kategorijas;
     
 Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 100 000, 1 000 000 įrašų.
-Jei failas jau egzistuoja, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotais failais. Jei failas dar neegzistuoja, pirmiausia failas sugeneruojamas ir tuomet vykdoma programos veikimo greičio (spartos) analizė.
+Jei failas jau egzistuoja, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotais failais. Jei failas dar neegzistuoja, pirmiausia sugeneruojamas fir tuomet vykdoma programos spartos analizė.
 
 Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atliekant programos veikimo greičio (spartos) analizę su failu, sudarytu iš 1 000 000 įrašų.
 
