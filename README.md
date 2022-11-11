@@ -100,8 +100,14 @@ Patobulinta `v0.4` versijos realizacija
 - [x] duomenų nuskaitymas iš failų;
 - [x] studentų rūšiavimas į dvi grupes/kategorijas;
     
-Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 100 000, 1 000 000 įrašų.
+Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 100 000, 1 000 000 įrašų. <br>
 Jei failas jau egzistuoja, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotu failu. Jei failas dar neegzistuoja, pirmiausia  failas sugeneruojamas, vartotojui į konsolę įvedant, kokį failą generuoti, ir tik tuomet vykdoma programos spartos analizė.
+
+![v041_1000](https://user-images.githubusercontent.com/72965991/201263423-5aab8de3-f3ae-4578-826a-48ae5afe3e62.png)
+![v041_1_1000](https://user-images.githubusercontent.com/72965991/201263444-e2f400ac-bffc-4b26-92d7-79c153425a7b.png)
+![v041_10000](https://user-images.githubusercontent.com/72965991/201263466-6770fc5c-eeb1-420c-8b3a-98846eedf979.png)
+![v041_100000](https://user-images.githubusercontent.com/72965991/201263475-77fd67a4-5512-482e-82b0-503b495ec6a2.png)
+![v041_1000000](https://user-images.githubusercontent.com/72965991/201263478-cbeade98-a0a4-4d0d-ae7d-cee6ba4b9ca3.png)
 
 Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atliekant programos veikimo greičio (spartos) analizę su failu, sudarytu iš 1 000 000 įrašų.
 
