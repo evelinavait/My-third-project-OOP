@@ -143,7 +143,7 @@ Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atl
 # v1.1 versija
 
 Patobulinta 1-osios užduoties programos realizacija (`v1.0` versija)
-- [x] Vietoje struktūros `struct Student`, jos pagrindu, vadovaujantis "gerosiomis praktikomis", sukurta klasė `class Student`.
+- [x] Vietoje struktūros `struct Student`, jos pagrindu, vadovaujantis "gerosiomis praktikomis", sukuriama klasė `class Student`.
 - [ ] Abiejų programų: naudojančios `struct` (ankstesnis darbas) ir naudojančios `class` tipą (dabartinė realizacija) sparta (veikimo laikas), naudojant vieną fiksuotą konteinerį, pvz. vektorių, pačią greičiausią dalijimo strategiją ir 100 000 ir 1 000 000 dydžio failus
 - [ ] Eksperimentinė analizė priklausomai nuo kompiliatoriaus optimizavimo lygio, nurodomo per flag'us: `O1, O2, O3`.
 
