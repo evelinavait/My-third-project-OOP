@@ -36,6 +36,24 @@ class Student
         int median_;
 };
 
+// 1. copy constructor
+//Student(const Student& that) : firstName(that.firstName), lastName(that.lastName)
+//{
+//}
+
+// 2. copy assignment operator
+//Student& operator=(const Student& that)
+//{
+//    firstName = that.firstName;
+//    lastName = that.lastName;
+//    return *this;
+//}
+
+// 3. destructor
+//~Student()
+//{
+//}
+
 //bool compare(const Student&, const Student&);
 
 #endif // STUDENT_H
