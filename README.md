@@ -150,6 +150,14 @@ Patobulinta 1-osios užduoties programos realizacija (`v1.0` versija)
 > Programos veikimo greitis beveik nepriklauso nuo to, ar yra panaudota struktūra, ar klasė.
 > Šiuo atveju tarp skirtingų flagų nėra didelio skirtumo. Tačiau, yra svarbu kompiliuoti su optimizacija, nes be jos programos veikimas yra labai lėtas.
 
+# v1.2 versija
+Realizuojama "Rule of three":
+I. Destructor
+II. Copy constructor
+III. Copy assignment (`operator=`)
+
+Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operatorius.
+
 ## Įdiegimo instrukcija ##
 1. Parsisiųsti norimą programos versijos (v1.0) kodą iš Releases;
 2. Kodą sukompiliuoti per komandinę eilutę arba pasirinktą IDE.
