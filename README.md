@@ -103,6 +103,24 @@ Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 10
 * Naudojant 1 strategiją programos vykdymo greitis gana spartus, tačiau 1 strategija yra neefektyvi užimamos atminties atžvilgiu. Naudojant tiek `std::vector`, tiek `std::list` konteinerius duomenų nuskaitymo sparta yra panaši. List'ų struktūra sudėtingesnė, todėl skirstant studentus į dvi grupes/kategorijas, jie yra lėtesni nei vektoriai.
 * Atminties atveju 2 strategija efektyvesnė, tačiau dažni trynimai gali būti "skausmingi".
 
+# v1.1 versija
+
+Patobulinta 1-osios užduoties programos realizacija (`v1.0` versija)
+- [x] Vietoje struktūros `struct Student`, jos pagrindu, vadovaujantis "gerosiomis praktikomis", sukuriama klasė `class Student`.
+- [ ] Palyginama abiejų programų: naudojančios `struct` (ankstesnis darbas) ir naudojančios `class` tipą (dabartinė realizacija) sparta (veikimo laikas), naudojant vieną fiksuotą konteinerį, pvz. vektorių, pačią greičiausią dalijimo strategiją ir 100 000 ir 1 000 000 dydžio failus
+- [ ] Atliekama eksperimentinė analizė priklausomai nuo kompiliatoriaus optimizavimo lygio, nurodomo per flag'us: `O1, O2, O3`.
+
+> Programos veikimo greitis beveik nepriklauso nuo to, ar yra panaudota struktūra, ar klasė.
+> Šiuo atveju tarp skirtingų flagų nėra didelio skirtumo. Tačiau, yra svarbu kompiliuoti su optimizacija, nes be jos programos veikimas yra labai lėtas.
+
+# v1.2 versija
+Realizuojama "Rule of three":
+I. Destructor
+II. Copy constructor
+III. Copy assignment (`operator=`)
+
+Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operatorius.
+
 ## Įdiegimo instrukcija ##
 1. Parsisiųsti norimą programos versijos (v1.0) kodą iš Releases;
 2. Kodą sukompiliuoti per komandinę eilutę arba pasirinktą IDE.
