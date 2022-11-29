@@ -1,4 +1,4 @@
-# My-first-project-OOP
+# My-second-project-OOP
 Project C++ Programming
 
 # [v0.1 versija](https://github.com/evelinavait/My-first-project-OOP/tree/v0.1)
