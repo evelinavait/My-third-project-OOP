@@ -103,7 +103,7 @@ Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 10
 * Naudojant 1 strategiją programos vykdymo greitis gana spartus, tačiau 1 strategija yra neefektyvi užimamos atminties atžvilgiu. Naudojant tiek `std::vector`, tiek `std::list` konteinerius duomenų nuskaitymo sparta yra panaši. List'ų struktūra sudėtingesnė, todėl skirstant studentus į dvi grupes/kategorijas, jie yra lėtesni nei vektoriai.
 * Atminties atveju 2 strategija efektyvesnė, tačiau dažni trynimai gali būti "skausmingi".
 
-# v1.1 versija
+# [v1.1 versija](https://github.com/evelinavait/My-second-project-OOP/tree/v1.1)
 
 Patobulinta 1-osios užduoties programos realizacija (`v1.0` versija)
 - [x] Vietoje struktūros `struct Student`, jos pagrindu, vadovaujantis "gerosiomis praktikomis", sukuriama klasė `class Student`.
@@ -113,7 +113,7 @@ Patobulinta 1-osios užduoties programos realizacija (`v1.0` versija)
 > Programos veikimo greitis beveik nepriklauso nuo to, ar yra panaudota struktūra, ar klasė.
 > Šiuo atveju tarp skirtingų flagų nėra didelio skirtumo. Tačiau, yra svarbu kompiliuoti su optimizacija, nes be jos programos veikimas yra labai lėtas.
 
-# v1.2 versija
+# [v1.2 versija](https://github.com/evelinavait/My-second-project-OOP/releases/tag/v1.2)
 Realizuojama "Rule of three":
 I. Destructor
 II. Copy constructor
