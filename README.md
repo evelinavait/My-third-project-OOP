@@ -1,5 +1,5 @@
-# My-second-project-OOP
-Project No. 2 C++ Programming
+# My-first-project-OOP
+Project C++ Programming
 
 # [v0.1 versija](https://github.com/evelinavait/My-first-project-OOP/tree/v0.1)
 Papildyta programa taip, kad ji veiktų ir tokiu atveju, kai namų darbų skaičius (n) yra nežinomas iš anksto, t.y. tik įvedimo metu vartotojas nusprendžia kuomet jis jau įvedė visų namų darbų rezultatus. Ši dalis realizuota rezultatus saugant į: [std::vector] tipo konteinerį.
@@ -102,6 +102,9 @@ Testavimas atliekamas su tais pačiais failais, sudarytais iš 1 000, 10 000, 10
 ### Išvados ###
 * Naudojant 1 strategiją programos vykdymo greitis gana spartus, tačiau 1 strategija yra neefektyvi užimamos atminties atžvilgiu. Naudojant tiek `std::vector`, tiek `std::list` konteinerius duomenų nuskaitymo sparta yra panaši. List'ų struktūra sudėtingesnė, todėl skirstant studentus į dvi grupes/kategorijas, jie yra lėtesni nei vektoriai.
 * Atminties atveju 2 strategija efektyvesnė, tačiau dažni trynimai gali būti "skausmingi".
+
+# My-second-project-OOP
+Project No. 2 C++ Programming
 
 # [v1.1 versija](https://github.com/evelinavait/My-second-project-OOP/tree/v1.1)
 
