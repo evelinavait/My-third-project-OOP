@@ -151,18 +151,18 @@ Patobulinta 1-osios užduoties programos realizacija (`v1.0` versija)
 > Šiuo atveju tarp skirtingų flagų nėra didelio skirtumo. Tačiau, yra svarbu kompiliuoti su optimizacija, nes be jos programos veikimas yra labai lėtas.
 
 # v1.2 versija
-Realizuojama "Rule of three":
-I. Destructor
-II. Copy constructor
-III. Copy assignment (`operator=`)
+Realizuojama "Rule of three":\
+I. Destructor\
+II. Copy constructor\
+III. Copy assignment (`operator=`)\
 
 Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operatorius.
 
 # v1.2.1 versija
-Realizuojama "Rule of three":
-I. Destructor
-II. Copy constructor
-III. Copy assignment (`operator=`)
+Realizuojama "Rule of three":\
+I. Destructor\
+II. Copy constructor\
+III. Copy assignment (`operator=`)\
 
 Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operatorius.
 
