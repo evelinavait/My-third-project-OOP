@@ -158,6 +158,14 @@ III. Copy assignment (`operator=`)
 
 Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operatorius.
 
+# v1.2.1 versija
+Realizuojama "Rule of three":
+I. Destructor
+II. Copy constructor
+III. Copy assignment (`operator=`)
+
+Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operatorius.
+
 ## Įdiegimo instrukcija ##
 1. Parsisiųsti norimą programos versijos (v1.0) kodą iš Releases;
 2. Kodą sukompiliuoti per komandinę eilutę arba pasirinktą IDE.
