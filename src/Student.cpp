@@ -1,9 +1,17 @@
 #include "Student.h"
 
-//Student::Student(std::istream& is)
-//{
-//    cout << "veikia";//ctor
-//}
+Student::Student(int id, int grades)
+{
+    firstName_ = "V" + ToString(id);
+    lastName_ = "P" + ToString(id);
+    exam_ = (rand() % 10) + 1;
+    for(int i=0; i<grades; i++)
+    {
+        int g = (rand() % 10) + 1;
+        grade_.push_back(g);
+    }
+}
+
 Student::Student(string line)
 {
     istringstream st(line);
@@ -18,6 +26,31 @@ Student::Student(string line)
     st >> exam_;
 }
 
+Student::~Student() // I. destructor
+{
+    grade_.clear(); // deallocate
+}
+
+Student::Student(const Student& other) // II. copy constructor
+{
+    firstName_ = other.firstName_;
+    lastName_ = other.lastName_;
+    grade_ = other.grade_;
+    exam_ = other.exam_;
+}
+
+Student&Student:: operator = (const Student& other) // III. copy assignment
+        {
+        if(this == &other)
+            return *this;
+
+        firstName_ = other.firstName_;
+        lastName_ = other.lastName_;
+        grade_ = other.grade_;
+        exam_ = other.exam_;
+        return *this;
+        }
+
 float Student::Final()
 {
     int sum = 0;
@@ -30,4 +63,10 @@ float Student::Final()
     float vid = sum/(float)cGrades;
 
     return (0.6 * exam_) + (vid * 0.4);
+}
+
+bool compareName(const Student& a, const Student& b)
+{
+	if (a.firstName() == b.firstName()) return a.lastName() < b.lastName();
+	return a.firstName() < b.firstName();
 }
