@@ -154,7 +154,7 @@ Patobulinta 1-osios užduoties programos realizacija (`v1.0` versija)
 Realizuojama "Rule of three":\
 I. Destructor\
 II. Copy constructor\
-III. Copy assignment (`operator=`)\
+III. Copy assignment (`operator=`)
 
 Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operatorius.
 
@@ -162,7 +162,7 @@ Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operat
 Realizuojama "Rule of three":\
 I. Destructor\
 II. Copy constructor\
-III. Copy assignment (`operator=`)\
+III. Copy assignment (`operator=`)
 
 Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operatorius.
 
