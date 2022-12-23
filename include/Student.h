@@ -28,9 +28,10 @@ class Student : public Human
         Student(const Student& other);
         Student& operator = (const Student& other);
 
+        // getters, inline
         inline int HowManyGrade() const { return grade_.size(); }
         inline int GetGrade(int number) const { return grade_[number]; }
-        float Final();  // get'eriai //i fcija paduodam grades -> iskvieciam final
+        float Final();
 
         // setters
         void setExam(int& e) { exam_ = e; }
