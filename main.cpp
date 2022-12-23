@@ -25,5 +25,3 @@ int main()
 
     return 0;
 }
-
-//Settings -> Compiler -> Compiler Flags
