@@ -9,7 +9,6 @@
 #include <bits/stdc++.h>
 #include <ctime>
 #include <fstream>
-
 using std::vector;
 using namespace std;
 

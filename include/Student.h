@@ -1,4 +1,5 @@
 #include "../calculations.h"
+#include "Human.h"
 
 #ifndef STUDENT_H
 #define STUDENT_H
@@ -17,30 +18,26 @@
 using std::vector;
 using namespace std;
 
-class Student
+class Student : public Human
 {
     public:
+        Student(){}; //global constructor
         Student(string line); //constructor
         Student(int id, int grades);
         ~Student();
         Student(const Student& other);
         Student& operator = (const Student& other);
 
-        // getters, inline
-        inline std::string firstName() const { return firstName_; }
-        inline std::string lastName() const { return lastName_; }
         inline int HowManyGrade() const { return grade_.size(); }
         inline int GetGrade(int number) const { return grade_[number]; }
-        float Final();
+        float Final();  // get'eriai //i fcija paduodam grades -> iskvieciam final
 
         // setters
-        void setFirstName(string& v) { firstName_ = v; }
-        void setLastName(string& p) { lastName_ = p; }
         void setExam(int& e) { exam_ = e; }
 
     private:
-        string firstName_; //global variable
-        string lastName_;
+        //string firstName_; //globalus kintamasis
+        //string lastName_;
         vector<int> grade_;
         float exam_;
 };

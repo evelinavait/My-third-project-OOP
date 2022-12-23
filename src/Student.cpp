@@ -12,20 +12,6 @@ Student::Student(int id, int grades)
     }
 }
 
-Student::Student(string line)
-{
-    istringstream st(line);
-    st >> firstName_; //read the firstName
-    st >> lastName_; //read the lastName
-    for (int i = 0; i< 5; i++){
-        string nd;
-        st >> nd;
-        grade_.push_back(atoi(nd.c_str()));
-    }
-
-    st >> exam_;
-}
-
 Student::~Student() // I. destructor
 {
     grade_.clear(); // deallocate
@@ -50,6 +36,20 @@ Student&Student:: operator = (const Student& other) // III. copy assignment
         exam_ = other.exam_;
         return *this;
         }
+
+Student::Student(string line)
+{
+    istringstream st(line);
+    st >> firstName_; //read the firstName
+    st >> lastName_; //read the lastName
+    for (int i = 0; i< 5; i++){
+        string nd;
+        st >> nd;
+        grade_.push_back(atoi(nd.c_str()));
+    }
+
+    st >> exam_;
+}
 
 float Student::Final()
 {

@@ -24,15 +24,15 @@ void PrintStudents(vector<Student> Students, string fileName)
     MyFile << "-------------------------------------------------------------------------------" << endl;
     for(int i=0; i < Students.size(); i++)
     {
-        MyFile << setw(10) << left << Students[i].firstName() << setw(10) << left << Students[i].lastName() << setw(19) << left;
+        MyFile << setw(10) << left << Students[i].firstName() << setw(10) << left << Students[i].lastName() << setw(19) << left; //<< Students[i].final << setw(10) << left << Students[i].median << endl;
         for(int j=0; j < Students[i].HowManyGrade(); j++)
-            MyFile << setw(10) << left << Students[i].GetGrade(j) << setw(10);
+            MyFile << setw(10) << left << Students[i].GetGrade(j) << setw(10); //<< left; //<< Students[i].lastName << setw(19) << left; //<< Students[i].final << setw(10) << left << Students[i].median << endl;
         MyFile << setw(10) << left << Students[i].Final() << endl;
     }
     MyFile.close();
 }
 
-void SmartAndStupid(vector<Student> Students)
+bool SmartAndStupid(vector<Student> Students)
 {
     vector<Student> stupid;
     vector<Student> smart;
@@ -105,7 +105,6 @@ void SmartAndStupid2(vector<Student> Students)
 //    clock_t end = clock();
 //    cout << Students.size() << " Irasu rusiavimo didejimo tvarka laikas, su sort funkcija (Vector): ";
 //    CalculateTimeAndPrint(begin, end);
-
     vector<Student>::iterator it;
     it = std::stable_partition(Students.begin(), Students.end(), [](Student S) {return S.Final() > 5;});
     vector<Student> stupid(it, Students.end());
@@ -136,6 +135,7 @@ void SmartAndStupidl(list<Student> Students){
         } else {
             smart.push_back(*it);
         }
+            //it = Students.erase(it);
             ++it;
     }
     clock_t end = clock();
@@ -191,6 +191,10 @@ vector<Student> ReadFromFile (string fileName){
         cout << "Failas negali buti atidarytas" << endl;
     }
 
+//    for(const Student &elem: myVec)
+//    {
+//        std::cout <<elem.firstName<<" "<<elem.lastName<<" "<<elem.final<<" "<<std::endl;
+//    }
     clock_t end = clock();
     cout << endl << "Failo is " << myVec.size() << " irasu nuskaitymo laikas (Vector): ";
     CalculateTimeAndPrint(begin, end);
@@ -231,6 +235,7 @@ list<Student> ReadFromFileList (string fileName){
 
 void GetStudents(int cStudents){
     int cGrades = 5;
+
 
     string fileNameToFunction = "files/" + ToString(cStudents) + "-Studentai.txt";
     ifstream ifile;

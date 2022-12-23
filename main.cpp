@@ -5,6 +5,9 @@ int main()
     int c;
     srand(time(0));
 
+//Student x;
+//cin >> x;
+//cout << x;
     cin.exceptions(std::istream::failbit);
     try
     {
@@ -22,3 +25,5 @@ int main()
 
     return 0;
 }
+
+//Settings -> Compiler -> Compiler Flags
