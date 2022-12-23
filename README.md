@@ -170,7 +170,12 @@ Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operat
 * Vietoj turimos `Student` klasės sukuriamos dvi: bazinė klasė, skirta bendrai aprašyti žmogų `Human` ir tuomet iš jos išvestinė (derived) klasę - `Student`.
 * Žmogui `Human` skirta bazinė klasė yra abstrakčioji klasė, t. y. nėra galima sukurti žmogaus tipo objektų, o tik objektus gautus iš jos išvestinių klasių.
 
-## Įdiegimo instrukcija ##
+# v2.0 versija
+Panaudojant Doxygen sukuriama dokumentacija, ji pateikiama kaip atskiras HTML katalogas.
+Norint pasiekti dokumentacijos puslapį, paleidžiamas html aplankale esantis index.html failas. Dokumentacijoje galima rasti klases, jų hierarchiją, klasėse apibrėžtų narių ir funkcijų sąrašus.
+
+Sukur dokumentaciją panaudojant Doxygen. Įkelkite dokumentaciją (kaip atskirą doxygen HTML katalogą) į repoziciją.
+## diegimo instrukcija ##
 1. Parsisiųsti norimą programos versijos (v1.0) kodą iš Releases;
 2. Kodą sukompiliuoti per komandinę eilutę arba pasirinktą IDE.
 Naudojant `CMakeLists.txt`:
