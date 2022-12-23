@@ -37,7 +37,7 @@ class Student : public Human
         void setExam(int& e) { exam_ = e; }
 
     private:
-        //string firstName_; //globalus kintamasis
+        //string firstName_; //global variable
         //string lastName_;
         vector<int> grade_;
         float exam_;
