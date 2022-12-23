@@ -171,8 +171,8 @@ Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operat
 * Žmogui `Human` skirta bazinė klasė yra abstrakčioji klasė, t. y. nėra galima sukurti žmogaus tipo objektų, o tik objektus gautus iš jos išvestinių klasių.
 
 # v2.0 versija
-Panaudojant Doxygen sukuriama dokumentacija, ji pateikiama kaip atskiras HTML katalogas.
-// Norint pasiekti dokumentacijos puslapį, paleidžiamas `html` aplankale esantis `index.html` failas. Dokumentacijoje galima rasti klases, jų hierarchiją, klasėse apibrėžtų narių ir funkcijų sąrašus.
+Panaudojant Doxygen sukuriama dokumentacija, ji pateikiama kaip atskiras HTML katalogas.\
+Norint pasiekti dokumentacijos puslapį, paleidžiamas `html` aplankale esantis `index.html` failas. Dokumentacijoje galima rasti klases, jų hierarchiją, klasėse apibrėžtų narių ir funkcijų sąrašus.
 
 ## diegimo instrukcija ##
 1. Parsisiųsti norimą programos versijos (v1.0) kodą iš Releases;
