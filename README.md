@@ -172,9 +172,8 @@ Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operat
 
 # v2.0 versija
 Panaudojant Doxygen sukuriama dokumentacija, ji pateikiama kaip atskiras HTML katalogas.
-Norint pasiekti dokumentacijos puslapį, paleidžiamas html aplankale esantis index.html failas. Dokumentacijoje galima rasti klases, jų hierarchiją, klasėse apibrėžtų narių ir funkcijų sąrašus.
+// Norint pasiekti dokumentacijos puslapį, paleidžiamas `html` aplankale esantis `index.html` failas. Dokumentacijoje galima rasti klases, jų hierarchiją, klasėse apibrėžtų narių ir funkcijų sąrašus.
 
-Sukur dokumentaciją panaudojant Doxygen. Įkelkite dokumentaciją (kaip atskirą doxygen HTML katalogą) į repoziciją.
 ## diegimo instrukcija ##
 1. Parsisiųsti norimą programos versijos (v1.0) kodą iš Releases;
 2. Kodą sukompiliuoti per komandinę eilutę arba pasirinktą IDE.
