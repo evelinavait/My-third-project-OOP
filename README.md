@@ -180,7 +180,7 @@ Nuo `v1.5.1` versijos užduotys atliekamos naudojantis **Visual Studio** program
 
 * Vietoj turimos `Student` klasės sukuriamos dvi: bazinė klasė, skirta bendrai aprašyti žmogų `Human` ir tuomet iš jos išvestinė (derived) klasę - `Student`.
 * Priešingai nuo `v1.2.1` versijos sukurtas numatytasis (angl. default) `Student` klasės konstruktorius, patobulinta įvesties/išvesties << operatorių realizacija.
-* `v1.5` versijoje žmogui `Human` skirta bazinė klasė buvo abstrakčioji klasė, todėl v1.5.1 versijoje `Human` klasė patobulinta, t. y. nėra galima sukurti žmogaus tipo objektų, o tik objektus gautus iš jos išvestinių klasių.
+* `v1.5` versijoje žmogui `Human` skirta bazinė klasė buvo abstrakčioji klasė, todėl `v1.5.1` versijoje `Human` klasė patobulinta, t. y. nėra galima sukurti žmogaus tipo objektų, o tik objektus gautus iš jos išvestinių klasių.
 
 # v2.0 versija
 Panaudojant Doxygen sukuriama dokumentacija, ji pateikiama kaip atskiras HTML katalogas.\
