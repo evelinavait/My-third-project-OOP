@@ -148,11 +148,11 @@ Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operat
 # [v1.5.1 versija](https://github.com/evelinavait/My-second-project-OOP/releases/tag/v1.5.1)
 Patobulinta `v1.5` versijos realizacija
 
-Nuo v1.5.1 versijos užduotys atliekamos naudojantis Visual Studio programinės įrangos aplinka.
+Nuo `v1.5.1` versijos užduotys atliekamos naudojantis Visual Studio programinės įrangos aplinka.
 
 * Vietoj turimos `Student` klasės sukuriamos dvi: bazinė klasė, skirta bendrai aprašyti žmogų `Human` ir tuomet iš jos išvestinė (derived) klasę - `Student`.
-* Priešingai nuo v1.2.1 versijos sukurtas numatytasis (angl. default) `Student` klasės konstruktorius, patobulinta įvesties/išvesties << operatorių realizacija.
-* v1.5 versijoje žmogui `Human` skirta bazinė klasė buvo abstrakčioji klasė, todėl v1.5.1 versijoje `Human` klasė patobulinta, t. y. nėra galima sukurti žmogaus tipo objektų, o tik objektus gautus iš jos išvestinių klasių.
+* Priešingai nuo `v1.2.1` versijos sukurtas numatytasis (angl. default) `Student` klasės konstruktorius, patobulinta įvesties/išvesties << operatorių realizacija.
+* `v1.5` versijoje žmogui `Human` skirta bazinė klasė buvo abstrakčioji klasė, todėl v1.5.1 versijoje `Human` klasė patobulinta, t. y. nėra galima sukurti žmogaus tipo objektų, o tik objektus gautus iš jos išvestinių klasių.
 
 # [v2.0 versija](https://github.com/evelinavait/My-second-project-OOP/releases/tag/v2.0)
 Panaudojant Doxygen sukuriama dokumentacija, ji pateikiama kaip atskiras HTML katalogas.\
@@ -160,6 +160,9 @@ Norint pasiekti dokumentacijos puslapį, paleidžiamas `html` aplankale esantis 
 
 # [v2.0.1 versija](https://github.com/evelinavait/My-second-project-OOP/releases/tag/v2.0.1)
 Patobulinta `v2.0` versijos realizacija
+
+Panaudojant Doxygen sukuriama dokumentacija, ji pateikiama kaip atskiras HTML katalogas. v2.0 versijoje pateikta dokumentacija papildyta komentarais, išsamia ataskaita.
+Norint pasiekti dokumentacijos puslapį, paleidžiamas `html` aplankale esantis `index.html` failas. Dokumentacijoje nurodomos klasės, jų hierarchija, klasėse apibrėžtų narių ir funkcijų sąrašai.
 
 ## Įdiegimo instrukcija ##
 1. Parsisiųsti norimą programos versijos (v1.0) kodą iš Releases;
