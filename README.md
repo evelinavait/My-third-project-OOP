@@ -167,7 +167,7 @@ Norint pasiekti dokumentacijos puslapį, paleidžiamas `html` aplankale esantis 
 # My-third-project-OOP
 Project No. 3 C++ Programming
 
-# v3.0 versija
+# [v3.0 versija](https://github.com/evelinavait/My-third-project-OOP/tree/v3.0)
 * Sukurtas programos diegimo failas - `setup.exe`;
 * Pateikiama programos įdiegimo ir naudojimosi instrukcija.
 
