@@ -5,13 +5,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Students-v1-5: Student Class Reference</title>
+<title>Students-v2-0: Student Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -21,9 +30,21 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Students-v1-5
+   <div id="projectname">Students-v2-0
    </div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -35,17 +56,23 @@
 var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
+$(document).ready(function(){initNavTree('class_student.html',''); initResizable(); });
 /* @license-end */
 </script>
-<div id="main-nav"></div>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,10 +94,10 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_student-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Student Class Reference</div></div>
 </div><!--header-->
@@ -105,29 +132,42 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a296b9dab86f6ff6097eeb222c6ef0f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a301b7966b2fc238a0befd02fb365be52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a301b7966b2fc238a0befd02fb365be52">GetGrade</a> (int number) const</td></tr>
 <tr class="separator:a301b7966b2fc238a0befd02fb365be52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58c0d57c31bd710e1de6273a2fb43f2e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a58c0d57c31bd710e1de6273a2fb43f2e">Final</a> ()</td></tr>
-<tr class="separator:a58c0d57c31bd710e1de6273a2fb43f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a138d8c4edae8a8f764bba8d1b7c58fd9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a138d8c4edae8a8f764bba8d1b7c58fd9">Final</a> () const</td></tr>
+<tr class="separator:a138d8c4edae8a8f764bba8d1b7c58fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f7f4cf2b06c54606a66a41420531e16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a4f7f4cf2b06c54606a66a41420531e16">setExam</a> (int &amp;e)</td></tr>
 <tr class="separator:a4f7f4cf2b06c54606a66a41420531e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_human"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_human')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_human.html">Human</a></td></tr>
+<tr class="memitem:acba7d1387c4fc739b6749283f66a9451 inherit pub_methods_class_human"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_human.html#acba7d1387c4fc739b6749283f66a9451">~Human</a> ()=0</td></tr>
+<tr class="separator:acba7d1387c4fc739b6749283f66a9451 inherit pub_methods_class_human"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e3edfd3b8d0b909c7f1d8c82ae668b3 inherit pub_methods_class_human"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_human.html#a5e3edfd3b8d0b909c7f1d8c82ae668b3">firstName</a> () const</td></tr>
 <tr class="separator:a5e3edfd3b8d0b909c7f1d8c82ae668b3 inherit pub_methods_class_human"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cf2d63d4123d6771dc5ec2b048389ea inherit pub_methods_class_human"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_human.html#a5cf2d63d4123d6771dc5ec2b048389ea">lastName</a> () const</td></tr>
 <tr class="separator:a5cf2d63d4123d6771dc5ec2b048389ea inherit pub_methods_class_human"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a3532c78f00194e2d0fc658760e099b inherit pub_methods_class_human"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_human.html#a2a3532c78f00194e2d0fc658760e099b">setFirstName</a> (string &amp;v)</td></tr>
-<tr class="separator:a2a3532c78f00194e2d0fc658760e099b inherit pub_methods_class_human"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70ddd60f46e9a36fdbf798feef0d5871 inherit pub_methods_class_human"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_human.html#a70ddd60f46e9a36fdbf798feef0d5871">setLastName</a> (string &amp;p)</td></tr>
-<tr class="separator:a70ddd60f46e9a36fdbf798feef0d5871 inherit pub_methods_class_human"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc1bba8ea7dc60b13f0be3d18165029 inherit pub_methods_class_human"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_human.html#aedc1bba8ea7dc60b13f0be3d18165029">setFirstName</a> (string &amp;v)</td></tr>
+<tr class="separator:aedc1bba8ea7dc60b13f0be3d18165029 inherit pub_methods_class_human"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb554bd0f10b053377a4314eedb202e inherit pub_methods_class_human"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_human.html#acbb554bd0f10b053377a4314eedb202e">setLastName</a> (string &amp;p)</td></tr>
+<tr class="separator:acbb554bd0f10b053377a4314eedb202e inherit pub_methods_class_human"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ab920d38b83deb554c34e527115767064"><td class="memItemLeft" align="right" valign="top">istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#ab920d38b83deb554c34e527115767064">operator&gt;&gt;</a> (istream &amp;in, <a class="el" href="class_student.html">Student</a> &amp;s)</td></tr>
+<tr class="separator:ab920d38b83deb554c34e527115767064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a934b23f689ea6ba1c88e0b1ac5648483"><td class="memItemLeft" align="right" valign="top">ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a934b23f689ea6ba1c88e0b1ac5648483">operator&lt;&lt;</a> (ostream &amp;out, const <a class="el" href="class_student.html">Student</a> &amp;s)</td></tr>
+<tr class="separator:a934b23f689ea6ba1c88e0b1ac5648483"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_human"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_human')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_human.html">Human</a></td></tr>
 <tr class="memitem:a63f1c21ef32486e66e1c795122ef4db3 inherit pro_attribs_class_human"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_human.html#a63f1c21ef32486e66e1c795122ef4db3">firstName_</a></td></tr>
+<tr class="memdesc:a63f1c21ef32486e66e1c795122ef4db3 inherit pro_attribs_class_human"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apsaugotas vardo (firstName) kintamasis (string tipo) ir gaunamas tik naudojant išvestinę klasę, kuri paveldi.  <a href="class_human.html#a63f1c21ef32486e66e1c795122ef4db3">More...</a><br /></td></tr>
 <tr class="separator:a63f1c21ef32486e66e1c795122ef4db3 inherit pro_attribs_class_human"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ed6b687aab3b9a2955f4ede8e65e60a inherit pro_attribs_class_human"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_human.html#a4ed6b687aab3b9a2955f4ede8e65e60a">lastName_</a></td></tr>
+<tr class="memdesc:a4ed6b687aab3b9a2955f4ede8e65e60a inherit pro_attribs_class_human"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apsaugotas pavardės (lastName) kintamasis (string tipo) ir pasiekiamas tik klasei, kuri paveldi <a class="el" href="class_human.html">Human</a> klasę  <a href="class_human.html#a4ed6b687aab3b9a2955f4ede8e65e60a">More...</a><br /></td></tr>
 <tr class="separator:a4ed6b687aab3b9a2955f4ede8e65e60a inherit pro_attribs_class_human"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Išvestinė (angl. derived) klasė - <a class="el" href="class_student.html">Student</a> </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af9168cedbfa5565cf0b20c1a9d3f5c9d" name="af9168cedbfa5565cf0b20c1a9d3f5c9d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9168cedbfa5565cf0b20c1a9d3f5c9d">&#9670;&#160;</a></span>Student() <span class="overload">[1/4]</span></h2>
 
@@ -150,6 +190,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Numatytasis (angl. default) konstruktorius</p>
+<p >Sukonstruoja <a class="el" href="class_student.html">Student</a> tuščią objektą. </p>
 
 </div>
 </div>
@@ -168,6 +210,13 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Konstruktorius, kuris apima vieną simbolių eilučių tipo parametrą - line.</p>
+<p >Skirtas sukurti <a class="el" href="class_student.html">Student</a> klasės objektą pagal duotą parametrą line </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>Simbolių eilučių tipo kintamasis </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -196,6 +245,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Konstruktorius, skirtas sukurti objektą pateiktiems duomenims</p>
+<p >Šis konstruktorius sukuria <a class="el" href="class_student.html">Student</a> klasės kintamąjį, nurodant ID ir pažymių įverčius </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Studento identifikacinis numeris </td></tr>
+    <tr><td class="paramname">grades</td><td>Namų darbų pažymiai </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -213,6 +270,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Destruktorius </p>
 
 </div>
 </div>
@@ -231,12 +289,19 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Kopijavimo konstruktorius</p>
+<p >Skirtas nukopijuoti studento informaciją iš vieno į kitą </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Informacija studento, kurio duomenis kopijuojame </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a58c0d57c31bd710e1de6273a2fb43f2e" name="a58c0d57c31bd710e1de6273a2fb43f2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58c0d57c31bd710e1de6273a2fb43f2e">&#9670;&#160;</a></span>Final()</h2>
+<a id="a138d8c4edae8a8f764bba8d1b7c58fd9" name="a138d8c4edae8a8f764bba8d1b7c58fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a138d8c4edae8a8f764bba8d1b7c58fd9">&#9670;&#160;</a></span>Final()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,10 +310,12 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">float Student::Final </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Getter'is atiduodantis studento galutinį įvertinimą</p>
+<dl class="section return"><dt>Returns</dt><dd>Grąžina studento galutinį įvertinimą </dd></dl>
 
 </div>
 </div>
@@ -275,6 +342,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Getter'is atiduodantis studento pažymį, indeksuotą konteineryje</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[number]</td><td>Studento pažymys, pažymėtas indeksu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Grąžina studento pažymį </dd></dl>
 
 </div>
 </div>
@@ -300,6 +375,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Getter'is atiduodantis namų darbų pažymių skaičių</p>
+<dl class="section return"><dt>Returns</dt><dd>Grąžina sveikąjį skaičių, nurodantį elementų skaičių vektoriuje grade_. </dd></dl>
 
 </div>
 </div>
@@ -318,6 +395,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Kopijavimo priskirties operatorius</p>
+<p >Lygybės operatoriaus perdengimas </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Informacija studento, kurį norime nukopijuoti </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Nukopijuoja <a class="el" href="class_student.html">Student</a> klasės kintamąjį ir jį priskiria kitam (juos sulygina) </dd></dl>
 
 </div>
 </div>
@@ -344,17 +429,119 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Setter'is</p>
+<p >void negrąžina jokios reikšmės </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Naudojamas egzamino reikšmei nustatyti </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a934b23f689ea6ba1c88e0b1ac5648483" name="a934b23f689ea6ba1c88e0b1ac5648483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a934b23f689ea6ba1c88e0b1ac5648483">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_student.html">Student</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Išvedimo operacijos funkcijos perdengimas</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ostream&amp;</td><td>out Nuoroda į išvesties srauto objektą </td></tr>
+    <tr><td class="paramname">Student&amp;</td><td>s Nuoroda į <a class="el" href="class_student.html">Student</a> objektą </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Funkcija grąžina nuorodą į išvesties srauto objektą (ostream nuorodą). </dd></dl>
+
+</div>
+</div>
+<a id="ab920d38b83deb554c34e527115767064" name="ab920d38b83deb554c34e527115767064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab920d38b83deb554c34e527115767064">&#9670;&#160;</a></span>operator&gt;&gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">istream &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">istream &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_student.html">Student</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Įvedimo operacijos funkcijos perdengimas</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">istream&amp;</td><td>in Nuoroda į įvesties srauto objektą </td></tr>
+    <tr><td class="paramname">Student&amp;</td><td>s Nuoroda į <a class="el" href="class_student.html">Student</a> objektą </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Funkcija grąžina nuorodą į įvesties srauto objektą </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/<a class="el" href="_student_8h_source.html">Student.h</a></li>
-<li>src/<a class="el" href="_student_8cpp.html">Student.cpp</a></li>
+<li><a class="el" href="_student_8h_source.html">Student.h</a></li>
+<li><a class="el" href="_student_8cpp.html">Student.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_student.html">Student</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>
