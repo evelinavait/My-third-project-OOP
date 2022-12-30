@@ -167,10 +167,13 @@ Norint pasiekti dokumentacijos puslapį, paleidžiamas `html` aplankale esantis 
 ## Įdiegimo instrukcija ##
 1. Parsisiųsti norimą programos versijos kodą iš Releases;
 2. Kodą sukompiliuoti per komandinę eilutę arba pasirinktą IDE.
-Naudojant `CMakeLists.txt`:
+Naudojant `CMakeLists.txt` ir komandas vykdant darbinėje direktorijoje, kurioje talpinamas parsisiųstas programos versijos kodas:
 ```
-cmake .
+cmake CMakeLists.txt
+cmake --install.
 cmake --build .
+copy files\ Debug\
+Debug\Students-v2-0.exe
 ```
 ## Naudojimosi instrukcija ##
 1. Įvesties/išvesties << operatorių realizacija. Į konsolę įvedamas studento vardas, pavardė, įvedami 5-i namų darbų (ND) pažymiai, studento egzamino pažymys. Taip konsolėje realizuojant išvesties operatorių, atspausdinamas vardas, pavardė, ND pažymiai, egzamino pažymys ir galutinis įvertinimas.
