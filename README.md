@@ -176,7 +176,7 @@ Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operat
 # v1.5.1 versija
 Patobulinta `v1.5` versijos realizacija
 
-Nuo `v1.5.1` versijos užduotys atliekamos naudojantis Visual Studio programinės įrangos aplinka.
+Nuo `v1.5.1` versijos užduotys atliekamos naudojantis **Visual Studio** programinės įrangos aplinka.
 
 * Vietoj turimos `Student` klasės sukuriamos dvi: bazinė klasė, skirta bendrai aprašyti žmogų `Human` ir tuomet iš jos išvestinė (derived) klasę - `Student`.
 * Priešingai nuo `v1.2.1` versijos sukurtas numatytasis (angl. default) `Student` klasės konstruktorius, patobulinta įvesties/išvesties << operatorių realizacija.
