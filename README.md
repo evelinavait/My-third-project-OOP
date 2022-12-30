@@ -192,7 +192,19 @@ Patobulinta `v2.0` versijos realizacija
 Panaudojant Doxygen sukuriama dokumentacija, ji pateikiama kaip atskiras HTML katalogas. v2.0 versijoje pateikta dokumentacija papildyta komentarais, išsamia ataskaita.\
 Norint pasiekti dokumentacijos puslapį, paleidžiamas `html` aplankale esantis `index.html` failas. Dokumentacijoje nurodomos klasės, jų hierarchija, klasėse apibrėžtų narių ir funkcijų sąrašai.
 
-## Įdiegimo instrukcija ##
+# My-third-project-OOP
+Project No. 3 C++ Programming
+
+# v3.0 versija
+* Sukurtas programos diegimo failas - `setup.exe`;
+* Pateikiama programos naudojimosi instrukcija.
+
+## Naudojimosi instrukcija (naudojant `setup.exe`) ##
+1. Atsisiųsti ir išarchyvuoti programą;
+2. Paleisti `setup.exe` failą (Students-v3-0-Setup aplankale) ir instaliuoti programą;
+3. Norint programą išinstaliuoti ar atnaujinti, atidarius `setup.exe` failą atitinkamai paspausti `Remove Setup`, `Repair Setup`.
+
+## Įdiegimo instrukcija (naudojant CMakeLists.txt) ##
 1. Parsisiųsti norimą programos versijos kodą iš Releases;
 2. Kodą sukompiliuoti per komandinę eilutę arba pasirinktą IDE.
 Naudojant `CMakeLists.txt` ir komandas vykdant darbinėje direktorijoje, kurioje talpinamas parsisiųstas programos versijos kodas:
