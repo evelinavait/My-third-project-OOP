@@ -161,7 +161,7 @@ Norint pasiekti dokumentacijos puslapį, paleidžiamas `html` aplankale esantis 
 # [v2.0.1 versija](https://github.com/evelinavait/My-second-project-OOP/releases/tag/v2.0.1)
 Patobulinta `v2.0` versijos realizacija
 
-Panaudojant Doxygen sukuriama dokumentacija, ji pateikiama kaip atskiras HTML katalogas. v2.0 versijoje pateikta dokumentacija papildyta komentarais, išsamia ataskaita.
+Panaudojant Doxygen sukuriama dokumentacija, ji pateikiama kaip atskiras HTML katalogas. v2.0 versijoje pateikta dokumentacija papildyta komentarais, išsamia ataskaita.\
 Norint pasiekti dokumentacijos puslapį, paleidžiamas `html` aplankale esantis `index.html` failas. Dokumentacijoje nurodomos klasės, jų hierarchija, klasėse apibrėžtų narių ir funkcijų sąrašai.
 
 ## Įdiegimo instrukcija ##
@@ -173,10 +173,11 @@ cmake .
 cmake --build .
 ```
 ## Naudojimosi instrukcija ##
-1. Į konsolę įvedamas studentų skaičius (n), t. y. kokį failą norima generuoti. Taip sugeneruojami atsitiktiniai studentų sąrašų failai, kurių (preliminarioje) struktūroje generuojami Vardai ir Pavardės, kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t. Taip pat sugeneruojami atsitiktiniai namų darbų ir egzamino įvertinimų balai (`ND1 ND2 ND3 ND4 ND5 Egzaminas`).
-2. Atliekama programos veikimo greičio (spartos) analizė. <br>
-2.1 Jei failas jau egzistuoja anksčiau direktorijoje sukurtame **"files/"** aplankale, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotu failu. <br>
-2.2 Jei failas dar neegzistuoja, pirmiausia  failas sugeneruojamas, vartotojui į konsolę įvedant, kokį failą norima generuoti, ir tik tuomet vykdoma programos spartos analizė.
+1. Įvesties/išvesties << operatorių realizacija. Į konsolę įvedamas studento vardas, pavardė, įvedami 5-i namų darbų (ND) pažymiai, studento egzamino pažymys. Taip konsolėje realizuojant išvesties operatorių, atspausdinamas vardas, pavardė, ND pažymiai, egzamino pažymys ir galutinis įvertinimas.
+2. Toliau į konsolę įvedamas studentų skaičius (n), t. y. kokį failą norima generuoti. Taip sugeneruojami atsitiktiniai studentų sąrašų failai, kurių (preliminarioje) struktūroje generuojami Vardai ir Pavardės, kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t. Taip pat sugeneruojami atsitiktiniai namų darbų ir egzamino įvertinimų balai (`ND1 ND2 ND3 ND4 ND5 Egzaminas`).
+3. Atliekama programos veikimo greičio (spartos) analizė. <br>
+3.1 Jei failas jau egzistuoja anksčiau direktorijoje sukurtame **"files/"** aplankale, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotu failu. <br>
+3.2 Jei failas dar neegzistuoja, pirmiausia  failas sugeneruojamas, vartotojui į konsolę įvedant, kokį failą norima generuoti, ir tik tuomet vykdoma programos spartos analizė.
 
 ## Testų metu naudoto kompiuterio parametrai: ##
 
