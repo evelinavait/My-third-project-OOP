@@ -140,6 +140,9 @@ Apačioje pateikiamas CPU naudojimas ir retrospektyva, atminties parametrai, atl
 * Naudojant 1 strategiją programos vykdymo greitis gana spartus, tačiau 1 strategija yra neefektyvi užimamos atminties atžvilgiu. Naudojant tiek `std::vector`, tiek `std::list` konteinerius duomenų nuskaitymo sparta yra panaši. List'ų struktūra sudėtingesnė, todėl skirstant studentus į dvi grupes/kategorijas, jie yra lėtesni nei vektoriai.
 * Atminties atveju 2 strategija efektyvesnė, tačiau dažni trynimai gali būti "skausmingi".
 
+# My-second-project-OOP
+Project No. 2 C++ Programming
+
 # v1.1 versija
 
 Patobulinta 1-osios užduoties programos realizacija (`v1.0` versija)
