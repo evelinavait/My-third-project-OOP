@@ -117,7 +117,7 @@ Patobulinta 1-osios užduoties programos realizacija (`v1.0` versija)
 > Šiuo atveju tarp skirtingų flagų nėra didelio skirtumo. Tačiau, yra svarbu kompiliuoti su optimizacija, nes be jos programos veikimas yra labai lėtas.
 
 # [v1.1.1 versija](https://github.com/evelinavait/My-second-project-OOP/tree/v1.1.1)
-Patobulinta `v1.1.1` versijos realizacija
+Patobulinta `v1.1` versijos realizacija
 
 - [x] Vietoje struktūros `struct Student`, jos pagrindu, vadovaujantis "gerosiomis praktikomis", sukuriama klasė `class Student`.
 - [x] Palyginama abiejų programų: naudojančios `struct` (ankstesnis darbas) ir naudojančios `class` tipą (dabartinė realizacija) sparta (veikimo laikas), naudojant vieną fiksuotą konteinerį, pvz. vektorių, pačią greičiausią dalijimo strategiją ir 100 000 ir 1 000 000 dydžio failus
@@ -131,13 +131,29 @@ III. Copy assignment (`operator=`)
 
 Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operatorius.
 
-# v1.5 versija
+# [v1.2.1 versija](https://github.com/evelinavait/My-second-project-OOP/releases/tag/v1.2.1)
+Patobulinta `v1.2` versijos realizacija
+
+Realizuojama "Rule of three":\
+I. Destructor\
+II. Copy constructor\
+III. Copy assignment (`operator=`)
+
+Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operatorius.
+
+# [v1.5 versija](https://github.com/evelinavait/My-second-project-OOP/releases/tag/v1.5)
 * Vietoj turimos `Student` klasės sukuriamos dvi: bazinė klasė, skirta bendrai aprašyti žmogų `Human` ir tuomet iš jos išvestinė (derived) klasę - `Student`.
 * Žmogui `Human` skirta bazinė klasė yra abstrakčioji klasė, t. y. nėra galima sukurti žmogaus tipo objektų, o tik objektus gautus iš jos išvestinių klasių.
 
-# v2.0 versija
+# [v1.5.1 versija](https://github.com/evelinavait/My-second-project-OOP/releases/tag/v1.5.1)
+Patobulinta `v1.5` versijos realizacija
+
+# [v2.0 versija](https://github.com/evelinavait/My-second-project-OOP/releases/tag/v2.0)
 Panaudojant Doxygen sukuriama dokumentacija, ji pateikiama kaip atskiras HTML katalogas.\
 Norint pasiekti dokumentacijos puslapį, paleidžiamas `html` aplankale esantis `index.html` failas. Dokumentacijoje nurodomos klasės, jų hierarchija, klasėse apibrėžtų narių ir funkcijų sąrašai.
+
+# [v2.0.1 versija](https://github.com/evelinavait/My-second-project-OOP/releases/tag/v2.0.1)
+Patobulinta `v2.0` versijos realizacija
 
 ## Įdiegimo instrukcija ##
 1. Parsisiųsti norimą programos versijos (v1.0) kodą iš Releases;
