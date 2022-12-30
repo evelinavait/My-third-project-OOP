@@ -165,7 +165,7 @@ Panaudojant Doxygen sukuriama dokumentacija, ji pateikiama kaip atskiras HTML ka
 Norint pasiekti dokumentacijos puslapį, paleidžiamas `html` aplankale esantis `index.html` failas. Dokumentacijoje nurodomos klasės, jų hierarchija, klasėse apibrėžtų narių ir funkcijų sąrašai.
 
 ## Įdiegimo instrukcija ##
-1. Parsisiųsti norimą programos versijos (v1.0) kodą iš Releases;
+1. Parsisiųsti norimą programos versijos kodą iš Releases;
 2. Kodą sukompiliuoti per komandinę eilutę arba pasirinktą IDE.
 Naudojant `CMakeLists.txt`:
 ```
