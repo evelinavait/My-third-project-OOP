@@ -1,11 +1,11 @@
-#include "functions.h"
+﻿#include "functions.h"
 #include "Student.h"
 
-bool compareInterval(Student i1, Student i2){
+bool compareInterval(Student i1, Student i2) {
     return (i1.Final() < i2.Final());
 }
 
-void CalculateTimeAndPrint(clock_t begin, clock_t end){
+void CalculateTimeAndPrint(clock_t begin, clock_t end) {
     double timer = double(end - begin) / CLOCKS_PER_SEC;
     cout << timer << endl;
 }
@@ -18,21 +18,20 @@ void PrintStudents(vector<Student> Students, string fileName)
     //header
 
     MyFile << setw(10) << left << "Vardas" << setw(10) << left << "Pavarde";
-    for(int i=0; i < Students[0].HowManyGrade(); i++)
-        MyFile << setw(10) << left << "ND"+ToString(i+1);
+    for (int i = 0; i < Students[0].HowManyGrade(); i++)
+        MyFile << setw(10) << left << "ND" + ToString(i + 1);
     MyFile << setw(10) << left << "Egzaminas";
     MyFile << "-------------------------------------------------------------------------------" << endl;
-    for(int i=0; i < Students.size(); i++)
+    for (int i = 0; i < Students.size(); i++)
     {
-        MyFile << setw(10) << left << Students[i].firstName() << setw(10) << left << Students[i].lastName() << setw(19) << left; //<< Students[i].final << setw(10) << left << Students[i].median << endl;
-        for(int j=0; j < Students[i].HowManyGrade(); j++)
-            MyFile << setw(10) << left << Students[i].GetGrade(j) << setw(10); //<< left; //<< Students[i].lastName << setw(19) << left; //<< Students[i].final << setw(10) << left << Students[i].median << endl;
+        MyFile << setw(10) << left << Students[i].firstName() << setw(10) << left << Students[i].lastName() << setw(19) << left;
+        for (int j = 0; j < Students[i].HowManyGrade(); j++)
+            MyFile << setw(10) << left << Students[i].GetGrade(j) << setw(10);
         MyFile << setw(10) << left << Students[i].Final() << endl;
     }
     MyFile.close();
 }
-
-bool SmartAndStupid(vector<Student> Students)
+void SmartAndStupid(vector<Student> Students)
 {
     vector<Student> stupid;
     vector<Student> smart;
@@ -40,13 +39,13 @@ bool SmartAndStupid(vector<Student> Students)
     clock_t begin = clock();
     //sort(Students.begin(), Students.end(), compareInterval);
     clock_t end = clock();
-//    cout << Students.size() << " Irasu rusiavimo didejimo tvarka laikas, su sort funkcija (Vector): ";
-//    CalculateTimeAndPrint(begin, end);
+    //    cout << Students.size() << " Irasu rusiavimo didejimo tvarka laikas, su sort funkcija (Vector): ";
+    //    CalculateTimeAndPrint(begin, end);
 
     begin = clock();
-    for(int i=0; i < Students.size(); i++)
+    for (int i = 0; i < Students.size(); i++)
     {
-        if(Students[i].Final() < 5)
+        if (Students[i].Final() < 5)
         {
             stupid.push_back(Students[i]);
         }
@@ -63,32 +62,33 @@ bool SmartAndStupid(vector<Student> Students)
     begin = clock();
     PrintStudents(stupid, ToString(Students.size()) + "nelaimingi");
     end = clock();
-//    cout << Students.size() << " Irasu nelaimingi irasymo i faila laikas (Vector): ";
-//    CalculateTimeAndPrint(begin, end);
+    //    cout << Students.size() << " Irasu nelaimingi irasymo i faila laikas (Vector): ";
+    //    CalculateTimeAndPrint(begin, end);
 
     begin = clock();
     PrintStudents(smart, ToString(Students.size()) + "protingi");
     end = clock();
-//    cout << Students.size() << " Irasu protingi irasymo i faila laikas (Vector): ";
-//    CalculateTimeAndPrint(begin, end);
+    //    cout << Students.size() << " Irasu protingi irasymo i faila laikas (Vector): ";
+    //    CalculateTimeAndPrint(begin, end);
 }
 
-void SmartAndStupid2NotOptim(vector<Student> Students){
+void SmartAndStupid2NotOptim(vector<Student> Students) {
     int vectorSize = Students.size();
     clock_t begin = clock();
-//    clock_t begin = clock();
-    //sort(Students.begin(), Students.end(), compareInterval);
-//    clock_t end = clock();
-    //cout << Students.size() << " Irasu rusiavimo didejimo tvarka laikas, su sort funkcija (Vector): ";
-//    CalculateTimeAndPrint(begin, end);
+    //    clock_t begin = clock();
+        //sort(Students.begin(), Students.end(), compareInterval);
+    //    clock_t end = clock();
+        //cout << Students.size() << " Irasu rusiavimo didejimo tvarka laikas, su sort funkcija (Vector): ";
+    //    CalculateTimeAndPrint(begin, end);
     vector<Student> stupid;
     vector<Student>::iterator it = Students.begin();
     while (it != Students.end()) {
-    if ((*it).Final() < 5) {
-    stupid.push_back(*it);
-    it = Students.erase(it);
-    } else
-    ++it;
+        if ((*it).Final() < 5) {
+            stupid.push_back(*it);
+            it = Students.erase(it);
+        }
+        else
+            ++it;
     }
 
     clock_t end = clock();
@@ -100,11 +100,12 @@ void SmartAndStupid2(vector<Student> Students)
 {
     int vectorSize = Students.size();
     clock_t begin = clock();
-//    clock_t begin = clock();
-    //sort(Students.begin(), Students.end(), compareInterval);
-//    clock_t end = clock();
-//    cout << Students.size() << " Irasu rusiavimo didejimo tvarka laikas, su sort funkcija (Vector): ";
-//    CalculateTimeAndPrint(begin, end);
+    //    clock_t begin = clock();
+        //sort(Students.begin(), Students.end(), compareInterval);
+    //    clock_t end = clock();
+    //    cout << Students.size() << " Irasu rusiavimo didejimo tvarka laikas, su sort funkcija (Vector): ";
+    //    CalculateTimeAndPrint(begin, end);
+
     vector<Student>::iterator it;
     it = std::stable_partition(Students.begin(), Students.end(), [](Student S) {return S.Final() > 5;});
     vector<Student> stupid(it, Students.end());
@@ -115,71 +116,72 @@ void SmartAndStupid2(vector<Student> Students)
     CalculateTimeAndPrint(begin, end);
 }
 
-void SmartAndStupidl(list<Student> Students){
+void SmartAndStupidl(list<Student> Students) {
     list<Student> stupid;
     list<Student> smart;
     int listSize = Students.size();
 
     clock_t begin = clock();
-//    clock_t begin = clock();
-    //Students.sort(compareInterval);
-//    clock_t end = clock();
-//    cout << Students.size() << " Irasu rusiavimo didejimo tvarka laikas, su sort funkcija (List): ";
-//    CalculateTimeAndPrint(begin, end);
+    //    clock_t begin = clock();
+        //Students.sort(compareInterval);
+    //    clock_t end = clock();
+    //    cout << Students.size() << " Irasu rusiavimo didejimo tvarka laikas, su sort funkcija (List): ";
+    //    CalculateTimeAndPrint(begin, end);
 
     list<Student>::iterator it = Students.begin();
-    while(it != Students.end()){
-            //cout << (*it).final << endl;
+    while (it != Students.end()) {
+        //cout << (*it).final << endl;
         if ((*it).Final() < 5) {
             stupid.push_back(*it); // dereference *it kad gauti elementą
-        } else {
+        }
+        else {
             smart.push_back(*it);
         }
-            //it = Students.erase(it);
-            ++it;
+        ++it;
     }
     clock_t end = clock();
     cout << listSize << " Irasu dalijimo i dvi grupes laikas (List): ";
     CalculateTimeAndPrint(begin, end);
 }
 
-void SmartAndStupidl2(list<Student> Students){
+void SmartAndStupidl2(list<Student> Students) {
     int listSize = Students.size();
 
     clock_t begin = clock();
-//    clock_t begin = clock();
-    //Students.sort(compareInterval);
-//    clock_t end = clock();
-//    cout << Students.size() << " Irasu rusiavimo didejimo tvarka laikas, su sort funkcija (List): ";
-//    CalculateTimeAndPrint(begin, end);
+    //    clock_t begin = clock();
+        //Students.sort(compareInterval);
+    //    clock_t end = clock();
+    //    cout << Students.size() << " Irasu rusiavimo didejimo tvarka laikas, su sort funkcija (List): ";
+    //    CalculateTimeAndPrint(begin, end);
     list<Student> stupid;
     list<Student>::iterator it = Students.begin();
     while (it != Students.end()) {
-    if ((*it).Final() < 5) {
-    stupid.push_back(*it); // dereference *it kad gauti elementą
-    it = Students.erase(it); // perduodame it, gauname it
-    } else
-    ++it; // pereiti prie kito Studento
+        if ((*it).Final() < 5) {
+            stupid.push_back(*it); // dereference *it kad gauti elementą
+            it = Students.erase(it); // perduodame it, gauname it
+        }
+        else
+            ++it; // pereiti prie kito Studento
     }
     clock_t end = clock();
     cout << listSize << " Irasu dalijimo i dvi grupes laikas (List): ";
     CalculateTimeAndPrint(begin, end);
 }
 
-vector<Student> ReadFromFile (string fileName){
+vector<Student> ReadFromFile(string fileName) {
     clock_t begin = clock();
     ifstream inputFile(fileName.c_str());
     string line;
     vector<Student> myVec;//create a vector of Student objects
-    if(inputFile)
+    if (inputFile)
     {
         int k;
         k = 0;
-        while(getline(inputFile, line))
+        while (getline(inputFile, line))
         {
             k++;
             if (k < 2)
-            continue;
+                continue;
 
             Student s(line);
 
@@ -191,10 +193,6 @@ vector<Student> ReadFromFile (string fileName){
         cout << "Failas negali buti atidarytas" << endl;
     }
 
-//    for(const Student &elem: myVec)
-//    {
-//        std::cout <<elem.firstName<<" "<<elem.lastName<<" "<<elem.final<<" "<<std::endl;
-//    }
     clock_t end = clock();
     cout << endl << "Failo is " << myVec.size() << " irasu nuskaitymo laikas (Vector): ";
     CalculateTimeAndPrint(begin, end);
@@ -202,20 +200,20 @@ vector<Student> ReadFromFile (string fileName){
     return myVec;
 }
 
-list<Student> ReadFromFileList (string fileName){
+list<Student> ReadFromFileList(string fileName) {
     clock_t begin = clock();
     ifstream inputFile(fileName.c_str());
     string line;
     list<Student> myList;//create a list of Student objects
-    if(inputFile)
+    if (inputFile)
     {
         int k;
         k = 0;
-        while(getline(inputFile, line))
+        while (getline(inputFile, line))
         {
             k++;
             if (k < 2)
-            continue;
+                continue;
             Student s(line);
 
             myList.push_back(s);//add the StudentObject into the list
@@ -233,19 +231,18 @@ list<Student> ReadFromFileList (string fileName){
     return myList;
 }
 
-void GetStudents(int cStudents){
+void GetStudents(int cStudents) {
     int cGrades = 5;
-
 
     string fileNameToFunction = "files/" + ToString(cStudents) + "-Studentai.txt";
     ifstream ifile;
     ifile.open(fileNameToFunction.c_str());
-    if(!ifile) {
+    if (!ifile) {
         cout << "Failas generuojamas" << endl;
         vector<Student> Students;
-        for(int i=0; i < cStudents; i++)
+        for (int i = 0; i < cStudents; i++)
         {
-            Student singleStudent(i+1, cGrades);
+            Student singleStudent(i + 1, cGrades);
             Students.push_back(singleStudent);
         }
 
@@ -255,8 +252,8 @@ void GetStudents(int cStudents){
         ss >> stringStudents;
 
         PrintStudents(Students, stringStudents);
-}
-        else {
+    }
+    else {
         cout << "Failas jau egzistuoja" << endl;
         ifile.close();
     }
@@ -264,14 +261,14 @@ void GetStudents(int cStudents){
     list<Student> readFromFileList = ReadFromFileList(fileNameToFunction);
 
     cout << endl << "Strategija 1" << endl;
-//    clock_t begin = clock();
+    //    clock_t begin = clock();
     SmartAndStupid(readFromFile);
     SmartAndStupidl(readFromFileList);
-//    clock_t end = clock();
+    //    clock_t end = clock();
 
     cout << endl << "Strategija 2" << endl;
     clock_t begin = clock();
-    SmartAndStupid2NotOptim(readFromFile);
+    //SmartAndStupid2NotOptim(readFromFile);
     SmartAndStupid2(readFromFile); //1 list: readfromfile -> stupid trinam ir perkeliam i nauja list
     SmartAndStupidl2(readFromFileList);
     clock_t end = clock();

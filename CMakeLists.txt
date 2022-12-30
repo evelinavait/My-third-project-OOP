@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24.3)
-
-project(Students-v1)
-
-add_executable(Students-v1 main.cpp calculations.cpp student.cpp)
+project(Students-v2-0)
+add_executable(Students-v2-0 main.cpp calculations.cpp functions.cpp Student.cpp Human.cpp)
+include_directories(${CMAKE_SOURCE_DIR}/files)
+link_directories(${CMAKE_SOURCE_DIR}/files)

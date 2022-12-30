@@ -6,7 +6,7 @@
 #include <vector>
 #include <sstream>
 #include <iomanip>
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
 #include <ctime>
 #include <fstream>
 using std::vector;
@@ -17,3 +17,4 @@ float Final(int exam, vector<int> grade);
 int Median(vector<int> arr);
 
 #endif // CALCULATIONS_H_INCLUDED
+#pragma once
