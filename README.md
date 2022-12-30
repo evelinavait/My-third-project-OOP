@@ -197,7 +197,7 @@ Project No. 3 C++ Programming
 
 # v3.0 versija
 * Sukurtas programos diegimo failas - `setup.exe`;
-* Pateikiama programos naudojimosi instrukcija.
+* Pateikiama programos įdiegimo ir naudojimosi instrukcija.
 
 ## Įdiegimo instrukcija (naudojant `setup.exe`) ##
 1. Atsisiųsti ir išarchyvuoti programą;
