@@ -199,12 +199,12 @@ Project No. 3 C++ Programming
 * Sukurtas programos diegimo failas - `setup.exe`;
 * Pateikiama programos naudojimosi instrukcija.
 
-## Naudojimosi instrukcija (naudojant `setup.exe`) ##
+## Įdiegimo instrukcija (naudojant `setup.exe`) ##
 1. Atsisiųsti ir išarchyvuoti programą;
 2. Paleisti `setup.exe` failą (Students-v3-0-Setup aplankale) ir instaliuoti programą;
 3. Norint programą išinstaliuoti ar atnaujinti, atidarius `setup.exe` failą atitinkamai paspausti `Remove Setup`, `Repair Setup`.
 
-## Įdiegimo instrukcija (naudojant CMakeLists.txt) ##
+## Įdiegimo instrukcija (naudojant `CMakeLists.txt`) ##
 1. Parsisiųsti norimą programos versijos kodą iš Releases;
 2. Kodą sukompiliuoti per komandinę eilutę arba pasirinktą IDE.
 Naudojant `CMakeLists.txt` ir komandas vykdant darbinėje direktorijoje, kurioje talpinamas parsisiųstas programos versijos kodas:
